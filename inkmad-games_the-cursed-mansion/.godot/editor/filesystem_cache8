@@ -1,3 +1,25 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1731887142
+::res://::1731888803
 icon.svg::CompressedTexture2D::3778636123422759230::1731887133::1731887143::1::::<><>::
+node_2d.tscn::PackedScene::3387427309765024237::1731887560::0::1::::<><>::
+::res://Abel - recursos/::1731888615
+::res://Abel - recursos/Mansión y velas/::1731888591
+candleA_01.png::CompressedTexture2D::1927156938172689482::1586100601::1731888845::1::::<><>::
+candleA_02.png::CompressedTexture2D::3409924728087541608::1586100600::1731888845::1::::<><>::
+candleA_03.png::CompressedTexture2D::3950425993071937427::1586100599::1731888845::1::::<><>::
+candleA_04.png::CompressedTexture2D::1478172454181942690::1586100598::1731888845::1::::<><>::
+candleB_01.png::CompressedTexture2D::9049421028837107297::1586100726::1731888845::1::::<><>::
+candleB_02.png::CompressedTexture2D::9044344540888787996::1586100725::1731888845::1::::<><>::
+candleB_03.png::CompressedTexture2D::8166787697220643043::1586100724::1731888845::1::::<><>::
+candleB_04.png::CompressedTexture2D::9086725649883613563::1586100724::1731888845::1::::<><>::
+decorative.png::CompressedTexture2D::78319217954607455::1586100488::1731888845::1::::<><>::
+mainlevbuild.png::CompressedTexture2D::7495179540711068077::1586100460::1731888845::1::::<><>::
+spike_0.png::CompressedTexture2D::7929108032851092337::1586103220::1731888845::1::::<><>::
+spike_1.png::CompressedTexture2D::340600578783243736::1586103220::1731888845::1::::<><>::
+spike_2.png::CompressedTexture2D::4453679696203216201::1586103219::1731888845::1::::<><>::
+spike_3.png::CompressedTexture2D::4681311633013835878::1586103218::1731888845::1::::<><>::
+spike_4.png::CompressedTexture2D::4951246909241708757::1586103217::1731888845::1::::<><>::
+torch_1.png::CompressedTexture2D::892418050990368392::1586100768::1731888844::1::::<><>::
+torch_2.png::CompressedTexture2D::6958880151632553635::1586100767::1731888844::1::::<><>::
+torch_3.png::CompressedTexture2D::6101369570490772538::1586100766::1731888844::1::::<><>::
+torch_4.png::CompressedTexture2D::1313947282721561334::1586100765::1731888844::1::::<><>::
