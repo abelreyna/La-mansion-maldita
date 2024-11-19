@@ -1,5 +1,6 @@
-[gd_scene load_steps=66 format=3 uid="uid://drt58mt48yk0g"]
+[gd_scene load_steps=67 format=3 uid="uid://drt58mt48yk0g"]
 
+[ext_resource type="Script" path="res://nodes/Character/character_body_2d.gd" id="1_5tico"]
 [ext_resource type="Texture2D" uid="uid://dh12ye7g8p1yo" path="res://Assets/Niña/Idle/idle_down.png" id="1_hbwp7"]
 [ext_resource type="Texture2D" uid="uid://dynshwehdnqtc" path="res://Assets/Niña/Walk/walk_down.png" id="2_eno1u"]
 [ext_resource type="Texture2D" uid="uid://2xkcp1k2q5n6" path="res://Assets/Niña/Walk/walk_left_down.png" id="3_024fy"]
@@ -9,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://b7iftsqvwenku" path="res://Assets/Niña/Walk/walk_up.png" id="7_ljy1s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6lr7q"]
-size = Vector2(16, 27)
+size = Vector2(87, 81)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j8hhf"]
 atlas = ExtResource("1_hbwp7")
@@ -442,12 +443,17 @@ animations = [{
 }]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(54, 19)
+script = ExtResource("1_5tico")
+metadata/_edit_group_ = true
 
 [node name="ColNiña" type="CollisionShape2D" parent="."]
-position = Vector2(0, -5.5)
+position = Vector2(467, 284)
 shape = SubResource("RectangleShape2D_6lr7q")
 
 [node name="AnimNiña" type="AnimatedSprite2D" parent="."]
-position = Vector2(-1, -3)
+position = Vector2(467, 258)
+scale = Vector2(7.07292, 5.55469)
 sprite_frames = SubResource("SpriteFrames_mrgw4")
-animation = &"Idle"
+animation = &"walk_right_down"
+frame_progress = 0.389467
