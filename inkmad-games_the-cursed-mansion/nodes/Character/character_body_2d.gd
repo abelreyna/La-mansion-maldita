@@ -6,10 +6,17 @@ func _physics_process(delta):
 	if dir:
 		if dir.x != 0:
 			if dir.x > 0:
-				$"AnimNiña".play("walk_right_down")
+				if dir.y > 0 or dir.y == 0:
+					$"AnimNiña".play("walk_right_down")
+				if dir.y < 0:
+					$"AnimNiña".play("walk_right_up")
 				pass
 			else:
-				$"AnimNiña".play("walk_left_down")
+				if dir.y > 0 or dir.y == 0:
+					$"AnimNiña".play("walk_left_down")
+				if dir.y < 0:
+					$"AnimNiña".play("walk_left_up")
+				pass
 		else:
 			if dir.y > 0:
 				$"AnimNiña".play("walk_down")
