@@ -454,5 +454,4 @@ shape = SubResource("RectangleShape2D_6lr7q")
 position = Vector2(16, -36)
 scale = Vector2(7.07292, 5.55469)
 sprite_frames = SubResource("SpriteFrames_mrgw4")
-animation = &"walk_right_down"
-frame_progress = 0.389467
+animation = &"walk_down"

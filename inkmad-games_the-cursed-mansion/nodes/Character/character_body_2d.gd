@@ -1,5 +1,5 @@
 extends CharacterBody2D
-const SPEED =300.0
+const SPEED =150
 func _physics_process(delta):
 	var dir: Vector2 =Input.get_vector("izquierda","derecha","arriba","abajo")
 	
@@ -19,8 +19,7 @@ func _physics_process(delta):
 				pass   
 	else:
 		
-		$"AnimNiña".stop()
-		$"AnimNiña".frame = 0
+		$"AnimNiña".play("Idle")
 		
 		pass
 		

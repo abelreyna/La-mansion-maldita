@@ -1,2 +1,3 @@
-res://nodes/Character/character_body_2d.tscn
 res://Salas/scena_1.tscn
+res://nodes/Character/character_body_2d.tscn
+res://nodes/Character/character_body_2d.gd
