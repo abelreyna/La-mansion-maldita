@@ -1,5 +1,5 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1732030186
+::res://::1732033592
 icon.svg::CompressedTexture2D::3778636123422759230::1731887133::1731887143::1::::<><>::
 node_2d.tscn::PackedScene::3387427309765024237::1731945634::0::1::::<><>::
 ::res://Abel - recursos/::1731888615
@@ -61,6 +61,6 @@ walk_right_up.png::CompressedTexture2D::4687312872756905974::1731891623::1731891
 walk_up.png::CompressedTexture2D::4649317188311530044::1731891623::1731891861::1::::<><>::
 ::res://nodes/::1731945634
 test_room.tscn::PackedScene::4812162983068143215::1731945634::0::1::::<><>::
-::res://nodes/Character/::1731945634
-character_body_2d.gd::GDScript::-1::1731945634::0::1::::<>CharacterBody2D<>::
-character_body_2d.tscn::PackedScene::8393576672229012656::1731945634::0::1::::<><>::res://nodes/Character/character_body_2d.gd<>uid://dh12ye7g8p1yo::::res://Assets/Niña/Idle/idle_down.png<>uid://dynshwehdnqtc::::res://Assets/Niña/Walk/walk_down.png<>uid://2xkcp1k2q5n6::::res://Assets/Niña/Walk/walk_left_down.png<>uid://3bwp3x12adwu::::res://Assets/Niña/Walk/walk_left_up.png<>uid://d354qqit52b1s::::res://Assets/Niña/Walk/walk_right_down.png<>uid://b71tmgcjj364q::::res://Assets/Niña/Walk/walk_right_up.png<>uid://b7iftsqvwenku::::res://Assets/Niña/Walk/walk_up.png
+::res://nodes/Character/::1732033202
+character_body_2d.gd::GDScript::-1::1732033057::0::1::::<>CharacterBody2D<>::
+character_body_2d.tscn::PackedScene::8393576672229012656::1732033202::0::1::::<><>::res://nodes/Character/character_body_2d.gd<>uid://dh12ye7g8p1yo::::res://Assets/Niña/Idle/idle_down.png<>uid://dynshwehdnqtc::::res://Assets/Niña/Walk/walk_down.png<>uid://2xkcp1k2q5n6::::res://Assets/Niña/Walk/walk_left_down.png<>uid://3bwp3x12adwu::::res://Assets/Niña/Walk/walk_left_up.png<>uid://d354qqit52b1s::::res://Assets/Niña/Walk/walk_right_down.png<>uid://b71tmgcjj364q::::res://Assets/Niña/Walk/walk_right_up.png<>uid://b7iftsqvwenku::::res://Assets/Niña/Walk/walk_up.png

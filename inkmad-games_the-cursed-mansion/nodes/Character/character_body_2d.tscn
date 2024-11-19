@@ -443,16 +443,15 @@ animations = [{
 }]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
-position = Vector2(54, 19)
+position = Vector2(239, 99)
 script = ExtResource("1_5tico")
-metadata/_edit_group_ = true
 
 [node name="ColNiña" type="CollisionShape2D" parent="."]
-position = Vector2(467, 284)
+position = Vector2(11, -12)
 shape = SubResource("RectangleShape2D_6lr7q")
 
 [node name="AnimNiña" type="AnimatedSprite2D" parent="."]
-position = Vector2(467, 258)
+position = Vector2(16, -36)
 scale = Vector2(7.07292, 5.55469)
 sprite_frames = SubResource("SpriteFrames_mrgw4")
 animation = &"walk_right_down"
