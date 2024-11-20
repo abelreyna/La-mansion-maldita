@@ -1,6 +1,12 @@
-CollisionShape2D
-StaticBody2D
-AnimatedSprite2D
+NavigationRegion2D
+NavigationAgent2D
 CharacterBody2D
-Sprite2D
+Camera2D
+Timer
+TileMap
+NavigationLink2D
+CollisionShape2D
 ParallaxBackground
+AnimatedSprite2D
+StaticBody2D
+Sprite2D

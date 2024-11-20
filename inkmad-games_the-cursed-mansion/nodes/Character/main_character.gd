@@ -1,8 +1,11 @@
 extends CharacterBody2D
 const SPEED =150
+
+
+
 func _physics_process(delta):
 	var dir: Vector2 =Input.get_vector("izquierda","derecha","arriba","abajo")
-	
+	var position = global_position
 	if dir:
 		if dir.x != 0:
 			if dir.x > 0:
