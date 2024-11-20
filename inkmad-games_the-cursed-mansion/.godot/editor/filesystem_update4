@@ -1,8 +1,3 @@
 res://Salas/scena_1.tscn
-res://nodes/Enemies/Enemy 1/enemy_1.gd
-res://nodes/Character/main_character.gd
-res://nodes/Character/main_character.tscn
-res://nodes/Enemies/Enemy 1/enemy_1.tscn
 res://Scene_prueba1.tscn
 res://nodes/Enemies/Enemy 1/Enemy 1.2/enemy_1_2.tscn
-res://nodes/Enemies/Enemy 1/Enemy 1.2/enemy_1_2.gd
