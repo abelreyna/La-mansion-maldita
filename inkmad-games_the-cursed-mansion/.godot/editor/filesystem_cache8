@@ -1,77 +1,106 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1732083085
-icon.svg::CompressedTexture2D::3778636123422759230::1731887524::1732035476::1::::<><>::
-node_2d.tscn::PackedScene::3387427309765024237::1731887677::0::1::::<><>::
-Scene_prueba1.tscn::PackedScene::3368633722860796382::1732082761::0::1::::<><>::uid://bt3nt5enytjko::::res://icon.svg<>uid://drt58mt48yk0g::::res://nodes/Character/main_character.tscn<>uid://ccafw0babu8j0::::res://nodes/Enemies/Enemy 1/Enemy 1.2/enemy_1_2.tscn
-::res://Abel - recursos/::1732035433
-::res://Abel - recursos/Mansión y velas/::1732035476
-candleA_01.png::CompressedTexture2D::1927156938172689482::1732035433::1732035476::1::::<><>::
-candleA_02.png::CompressedTexture2D::3409924728087541608::1732035433::1732035476::1::::<><>::
-candleA_03.png::CompressedTexture2D::3950425993071937427::1732035433::1732035476::1::::<><>::
-candleA_04.png::CompressedTexture2D::1478172454181942690::1732035433::1732035476::1::::<><>::
-candleB_01.png::CompressedTexture2D::9049421028837107297::1732035433::1732035476::1::::<><>::
-candleB_02.png::CompressedTexture2D::9044344540888787996::1732035433::1732035476::1::::<><>::
-candleB_03.png::CompressedTexture2D::8166787697220643043::1732035433::1732035476::1::::<><>::
-candleB_04.png::CompressedTexture2D::9086725649883613563::1732035433::1732035476::1::::<><>::
-decorative.png::CompressedTexture2D::78319217954607455::1732035433::1732035476::1::::<><>::
-mainlevbuild.png::CompressedTexture2D::7495179540711068077::1732035433::1732035476::1::::<><>::
-spike_0.png::CompressedTexture2D::7929108032851092337::1732035433::1732035476::1::::<><>::
-spike_1.png::CompressedTexture2D::340600578783243736::1732035433::1732035476::1::::<><>::
-spike_2.png::CompressedTexture2D::4453679696203216201::1732035433::1732035476::1::::<><>::
-spike_3.png::CompressedTexture2D::4681311633013835878::1732035433::1732035476::1::::<><>::
-spike_4.png::CompressedTexture2D::4951246909241708757::1732035433::1732035476::1::::<><>::
-torch_1.png::CompressedTexture2D::892418050990368392::1732035433::1732035476::1::::<><>::
-torch_2.png::CompressedTexture2D::6958880151632553635::1732035433::1732035476::1::::<><>::
-torch_3.png::CompressedTexture2D::6101369570490772538::1732035433::1732035476::1::::<><>::
-torch_4.png::CompressedTexture2D::1313947282721561334::1732035433::1732035476::1::::<><>::
-::res://Assets/::1731890070
-::res://Assets/Niña/::1732035476
-frame dimensions.png::CompressedTexture2D::1979431327436229880::1722728257::1732035476::1::::<><>::
-Shadow.png::CompressedTexture2D::6043113136978848463::1722724995::1732035476::1::::<><>::
-::res://Assets/Niña/Death/::1732035476
-death_normal.png::CompressedTexture2D::6258559366353016316::1722724492::1732035476::1::::<><>::
-death_normal_down.png::CompressedTexture2D::4397257577411937175::1722724398::1732035476::1::::<><>::
-death_normal_left_down.png::CompressedTexture2D::8868510457709763633::1722724406::1732035476::1::::<><>::
-death_normal_left_up.png::CompressedTexture2D::7786098287883879340::1722724412::1732035476::1::::<><>::
-death_normal_right_down.png::CompressedTexture2D::87466319708374635::1722724419::1732035476::1::::<><>::
-death_normal_right_up.png::CompressedTexture2D::5135088757522108694::1722724425::1732035476::1::::<><>::
-death_normal_up.png::CompressedTexture2D::9150342669704589634::1722724431::1732035476::1::::<><>::
-::res://Assets/Niña/Death Shadow/::1732035476
-death_normal.png::CompressedTexture2D::8749952612732770032::1722725336::1732035476::1::::<><>::
-death_normal_down.png::CompressedTexture2D::7835656347329451707::1722725239::1732035476::1::::<><>::
-death_normal_left_down.png::CompressedTexture2D::780859539989434430::1722725246::1732035476::1::::<><>::
-death_normal_left_up.png::CompressedTexture2D::6769508839157156984::1722725252::1732035476::1::::<><>::
-death_normal_right_down.png::CompressedTexture2D::1471926130297955974::1722725259::1732035476::1::::<><>::
-death_normal_right_up.png::CompressedTexture2D::6876326179140187896::1722725265::1732035476::1::::<><>::
-death_normal_up.png::CompressedTexture2D::2690765412462765928::1722725273::1732035476::1::::<><>::
-::res://Assets/Niña/Idle/::1732035476
-idle.png::CompressedTexture2D::1844413418270379841::1722390197::1732035476::1::::<><>::
-idle_down.png::CompressedTexture2D::7705940255853970030::1722389896::1732035476::1::::<><>::
-idle_left_down.png::CompressedTexture2D::5397640501442744880::1722389951::1732035476::1::::<><>::
-idle_left_up.png::CompressedTexture2D::6010537820879188773::1722390058::1732035476::1::::<><>::
-idle_right_down.png::CompressedTexture2D::8398065138452761008::1722389936::1732035476::1::::<><>::
-idle_right_up.png::CompressedTexture2D::6197139500948083079::1722390021::1732035476::1::::<><>::
-idle_up.png::CompressedTexture2D::5781754455329172829::1722389859::1732035476::1::::<><>::
-::res://Assets/Niña/Walk/::1732035476
-walk.png::CompressedTexture2D::3967097235348902574::1722717304::1732035476::1::::<><>::
-walk_down.png::CompressedTexture2D::8871737777637496000::1722717222::1732035476::1::::<><>::
-walk_left_down.png::CompressedTexture2D::1943191036591989953::1722717233::1732035476::1::::<><>::
-walk_left_up.png::CompressedTexture2D::1968716067770114108::1722717237::1732035476::1::::<><>::
-walk_right_down.png::CompressedTexture2D::9188271224695173026::1722717243::1732035476::1::::<><>::
-walk_right_up.png::CompressedTexture2D::4687312872756905974::1722717249::1732035476::1::::<><>::
-walk_up.png::CompressedTexture2D::4649317188311530044::1722717253::1732035476::1::::<><>::
-::res://nodes/::1732074582
-test_room.tscn::PackedScene::4812162983068143215::1731891388::0::1::::<><>::
-::res://nodes/Character/::1732082454
-main_character.gd::GDScript::-1::1732079122::0::1::::<>CharacterBody2D<>::
-main_character.tscn::PackedScene::8393576672229012656::1732082454::0::1::::<><>::res://nodes/Character/main_character.gd<>uid://dh12ye7g8p1yo::::res://Assets/Niña/Idle/idle_down.png<>uid://dynshwehdnqtc::::res://Assets/Niña/Walk/walk_down.png<>uid://2xkcp1k2q5n6::::res://Assets/Niña/Walk/walk_left_down.png<>uid://3bwp3x12adwu::::res://Assets/Niña/Walk/walk_left_up.png<>uid://d354qqit52b1s::::res://Assets/Niña/Walk/walk_right_down.png<>uid://b71tmgcjj364q::::res://Assets/Niña/Walk/walk_right_up.png<>uid://b7iftsqvwenku::::res://Assets/Niña/Walk/walk_up.png
-::res://nodes/Enemies/::1732074630
-::res://nodes/Enemies/Enemy 1/::1732082514
-AnimationSheet_Character.png::CompressedTexture2D::8181656838289333635::1732074692::1732074715::1::::<><>::
-enemy_1.gd::GDScript::-1::1732081914::0::1::::<>CharacterBody2D<>::
-enemy_1.tscn::PackedScene::5120925833199856221::1732082514::0::1::::<><>::uid://dotixs3xvpc7t::::res://nodes/Enemies/Enemy 1/AnimationSheet_Character.png<>res://nodes/Enemies/Enemy 1/enemy_1.gd
-::res://nodes/Enemies/Enemy 1/Enemy 1.2/::1732082761
-enemy_1_2.gd::GDScript::-1::1732082673::0::1::::<>CharacterBody2D<>::
-enemy_1_2.tscn::PackedScene::4913563241722725823::1732082761::0::1::::<><>::res://nodes/Enemies/Enemy 1/Enemy 1.2/enemy_1_2.gd<>uid://dotixs3xvpc7t::::res://nodes/Enemies/Enemy 1/AnimationSheet_Character.png
-::res://Salas/::1732082760
-scena_1.tscn::PackedScene::1996408115258799401::1732082760::0::1::::<><>::uid://drt58mt48yk0g::::res://nodes/Character/main_character.tscn<>uid://ccafw0babu8j0::::res://nodes/Enemies/Enemy 1/Enemy 1.2/enemy_1_2.tscn<>uid://bt3nt5enytjko::::res://icon.svg<>uid://de1yrn3yccwmn::::res://Abel - recursos/Mansión y velas/mainlevbuild.png
+::res://::1732141979
+icon.svg::CompressedTexture2D::3778636123422759230::1731887133::1732140250::1::::<><>::
+node_2d.tscn::PackedScene::3387427309765024237::1732139815::0::1::::<><>::
+Scene_prueba1.tscn::PackedScene::3368633722860796382::1732141876::0::1::::<><>::uid://bt3nt5enytjko::::res://icon.svg<>uid://drt58mt48yk0g::::res://nodes/Character/main_character.tscn<>uid://ccafw0babu8j0::::res://nodes/Enemies/Enemy 1/Enemy 1.2/enemy_1_2.tscn
+::res://Abel - recursos/::1731888615
+::res://Abel - recursos/Mansión y velas/::1732140251
+candleA_01.png::CompressedTexture2D::1927156938172689482::1586100601::1732140251::1::::<><>::
+candleA_02.png::CompressedTexture2D::3409924728087541608::1586100600::1732140251::1::::<><>::
+candleA_03.png::CompressedTexture2D::3950425993071937427::1586100599::1732140251::1::::<><>::
+candleA_04.png::CompressedTexture2D::1478172454181942690::1586100598::1732140251::1::::<><>::
+candleB_01.png::CompressedTexture2D::9049421028837107297::1586100726::1732140251::1::::<><>::
+candleB_02.png::CompressedTexture2D::9044344540888787996::1586100725::1732140251::1::::<><>::
+candleB_03.png::CompressedTexture2D::8166787697220643043::1586100724::1732140251::1::::<><>::
+candleB_04.png::CompressedTexture2D::9086725649883613563::1586100724::1732140251::1::::<><>::
+decorative.png::CompressedTexture2D::78319217954607455::1586100488::1732140250::1::::<><>::
+mainlevbuild.png::CompressedTexture2D::7495179540711068077::1586100460::1732140251::1::::<><>::
+spike_0.png::CompressedTexture2D::7929108032851092337::1586103220::1732140250::1::::<><>::
+spike_1.png::CompressedTexture2D::340600578783243736::1586103220::1732140250::1::::<><>::
+spike_2.png::CompressedTexture2D::4453679696203216201::1586103219::1732140250::1::::<><>::
+spike_3.png::CompressedTexture2D::4681311633013835878::1586103218::1732140250::1::::<><>::
+spike_4.png::CompressedTexture2D::4951246909241708757::1586103217::1732140250::1::::<><>::
+torch_1.png::CompressedTexture2D::892418050990368392::1586100768::1732140250::1::::<><>::
+torch_2.png::CompressedTexture2D::6958880151632553635::1586100767::1732140250::1::::<><>::
+torch_3.png::CompressedTexture2D::6101369570490772538::1586100766::1732140250::1::::<><>::
+torch_4.png::CompressedTexture2D::1313947282721561334::1586100765::1732140251::1::::<><>::
+::res://Assets/::1732139208
+::res://Assets/Niña/::1732140251
+frame dimensions.png::CompressedTexture2D::1979431327436229880::1731891623::1732140251::1::::<><>::
+Shadow.png::CompressedTexture2D::6043113136978848463::1731891623::1732140250::1::::<><>::
+::res://Assets/Niña/Death/::1732140251
+death_normal.png::CompressedTexture2D::6258559366353016316::1731891623::1732140251::1::::<><>::
+death_normal_down.png::CompressedTexture2D::4397257577411937175::1731891623::1732140251::1::::<><>::
+death_normal_left_down.png::CompressedTexture2D::8868510457709763633::1731891623::1732140251::1::::<><>::
+death_normal_left_up.png::CompressedTexture2D::7786098287883879340::1731891623::1732140251::1::::<><>::
+death_normal_right_down.png::CompressedTexture2D::87466319708374635::1731891623::1732140251::1::::<><>::
+death_normal_right_up.png::CompressedTexture2D::5135088757522108694::1731891623::1732140251::1::::<><>::
+death_normal_up.png::CompressedTexture2D::9150342669704589634::1731891623::1732140251::1::::<><>::
+::res://Assets/Niña/Death Shadow/::1732140251
+death_normal.png::CompressedTexture2D::8749952612732770032::1731891623::1732140251::1::::<><>::
+death_normal_down.png::CompressedTexture2D::7835656347329451707::1731891623::1732140251::1::::<><>::
+death_normal_left_down.png::CompressedTexture2D::780859539989434430::1731891623::1732140251::1::::<><>::
+death_normal_left_up.png::CompressedTexture2D::6769508839157156984::1731891623::1732140251::1::::<><>::
+death_normal_right_down.png::CompressedTexture2D::1471926130297955974::1731891623::1732140251::1::::<><>::
+death_normal_right_up.png::CompressedTexture2D::6876326179140187896::1731891623::1732140251::1::::<><>::
+death_normal_up.png::CompressedTexture2D::2690765412462765928::1731891623::1732140251::1::::<><>::
+::res://Assets/Niña/Idle/::1732140251
+idle.png::CompressedTexture2D::1844413418270379841::1731891623::1732140251::1::::<><>::
+idle_down.png::CompressedTexture2D::7705940255853970030::1731891623::1732140251::1::::<><>::
+idle_left_down.png::CompressedTexture2D::5397640501442744880::1731891623::1732140251::1::::<><>::
+idle_left_up.png::CompressedTexture2D::6010537820879188773::1731891623::1732140251::1::::<><>::
+idle_right_down.png::CompressedTexture2D::8398065138452761008::1731891623::1732140250::1::::<><>::
+idle_right_up.png::CompressedTexture2D::6197139500948083079::1731891623::1732140250::1::::<><>::
+idle_up.png::CompressedTexture2D::5781754455329172829::1731891623::1732140250::1::::<><>::
+::res://Assets/Niña/Idle_with_flashlight/::1732140250
+idle_down_withflashlight.png::CompressedTexture2D::5047790160046658531::1732070543::1732140250::1::::<><>::
+::res://Assets/Niña/Walk/::1732140250
+walk.png::CompressedTexture2D::3967097235348902574::1731891623::1732140250::1::::<><>::
+walk_down.png::CompressedTexture2D::8871737777637496000::1731891623::1732140250::1::::<><>::
+walk_left_down.png::CompressedTexture2D::1943191036591989953::1731891623::1732140250::1::::<><>::
+walk_left_up.png::CompressedTexture2D::1968716067770114108::1731891623::1732140250::1::::<><>::
+walk_right_down.png::CompressedTexture2D::9188271224695173026::1731891623::1732140250::1::::<><>::
+walk_right_up.png::CompressedTexture2D::4687312872756905974::1731891623::1732140250::1::::<><>::
+walk_up.png::CompressedTexture2D::4649317188311530044::1731891623::1732140250::1::::<><>::
+::res://Assets/Niña/Walk_with_flashlight/::1732140250
+walk_down_withflashlight.png::CompressedTexture2D::6079462542323393456::1732070543::1732140250::1::::<><>::
+walk_left_down_withflashlight.png::CompressedTexture2D::3101246577819350384::1732070543::1732140250::1::::<><>::
+walk_left_up_withflashlight.png::CompressedTexture2D::6863464397170282117::1732070543::1732140250::1::::<><>::
+walk_right_down_withflashlight.png::CompressedTexture2D::4323998343995768271::1732070543::1732140250::1::::<><>::
+walk_right_up_withflashlight.png::CompressedTexture2D::2557880291328649604::1732070543::1732140250::1::::<><>::
+walk_up_withflashlight.png::CompressedTexture2D::5506700663736762841::1732070544::1732140250::1::::<><>::
+::res://Assets/Sounds/::1732139208
+::res://Assets/Sounds/Ambience/::1732140249
+creepy-vocal-ambience-6074.mp3::AudioStreamMP3::5131644308222288644::1732139208::1732140249::1::::<><>::
+distant-horror-ambient-56014.mp3::AudioStreamMP3::6177401255541626896::1732139208::1732140249::1::::<><>::
+horror-ambience-17601.mp3::AudioStreamMP3::2491746408216547351::1732139208::1732140249::1::::<><>::
+horror-background-atmosphere-156462.mp3::AudioStreamMP3::7116606730116756065::1732139208::1732140249::1::::<><>::
+nightmare-designs-113489.mp3::AudioStreamMP3::6478627824293313269::1732139208::1732140249::1::::<><>::
+::res://Assets/Sounds/Door/::1732140249
+door-open-close-45475.mp3::AudioStreamMP3::5690990394271088978::1732139208::1732140249::1::::<><>::
+dorm-door-opening-6038.mp3::AudioStreamMP3::1820127710297311411::1732139208::1732140249::1::::<><>::
+open-and-closed-door-156814.mp3::AudioStreamMP3::2247088201820728444::1732139208::1732140249::1::::<><>::
+open-doors-114615.mp3::AudioStreamMP3::8699184928826587481::1732139208::1732140249::1::::<><>::
+::res://Assets/Sounds/Flashlight/::1732140249
+flashlight-102291.mp3::AudioStreamMP3::6913960679253805173::1732139208::1732140249::1::::<><>::
+flashlight-clicking-on-105809.mp3::AudioStreamMP3::6645771075042458754::1732139208::1732140249::1::::<><>::
+flashlight-switch-102792.mp3::AudioStreamMP3::1117567177769393975::1732139208::1732140249::1::::<><>::
+::res://Assets/Sounds/Walking/::1732140249
+walking-on-a-wooden-floor-32056.mp3::AudioStreamMP3::5070420379603960486::1732139208::1732140249::1::::<><>::
+walking-on-a-wooden-floor-72829.mp3::AudioStreamMP3::3493603341880283164::1732139208::1732140249::1::::<><>::
+walking-on-wooden-floor-94493.mp3::AudioStreamMP3::5822397341434319653::1732139208::1732140249::1::::<><>::
+::res://nodes/::1732084357
+test_room.tscn::PackedScene::4812162983068143215::1731945634::0::1::::<><>::
+::res://nodes/Character/::1732141876
+main_character.gd::GDScript::-1::1732084357::0::1::::<>CharacterBody2D<>::
+main_character.tscn::PackedScene::8393576672229012656::1732141876::0::1::::<><>::res://nodes/Character/main_character.gd<>uid://dh12ye7g8p1yo::::res://Assets/Niña/Idle/idle_down.png<>uid://dynshwehdnqtc::::res://Assets/Niña/Walk/walk_down.png<>uid://2xkcp1k2q5n6::::res://Assets/Niña/Walk/walk_left_down.png<>uid://3bwp3x12adwu::::res://Assets/Niña/Walk/walk_left_up.png<>uid://d354qqit52b1s::::res://Assets/Niña/Walk/walk_right_down.png<>uid://b71tmgcjj364q::::res://Assets/Niña/Walk/walk_right_up.png<>uid://b7iftsqvwenku::::res://Assets/Niña/Walk/walk_up.png
+::res://nodes/Enemies/::1732084357
+::res://nodes/Enemies/Enemy 1/::1732140250
+AnimationSheet_Character.png::CompressedTexture2D::8181656838289333635::1732084357::1732140250::1::::<><>::
+enemy_1.gd::GDScript::-1::1732084357::0::1::::<>CharacterBody2D<>::
+enemy_1.tscn::PackedScene::5120925833199856221::1732084357::0::1::::<><>::uid://dotixs3xvpc7t::::res://nodes/Enemies/Enemy 1/AnimationSheet_Character.png<>res://nodes/Enemies/Enemy 1/enemy_1.gd
+::res://nodes/Enemies/Enemy 1/Enemy 1.2/::1732141876
+enemy_1_2.gd::GDScript::-1::1732084357::0::1::::<>CharacterBody2D<>::
+enemy_1_2.tscn::PackedScene::4913563241722725823::1732141876::0::1::::<><>::res://nodes/Enemies/Enemy 1/Enemy 1.2/enemy_1_2.gd<>uid://dotixs3xvpc7t::::res://nodes/Enemies/Enemy 1/AnimationSheet_Character.png
+::res://Salas/::1732141876
+scena_1.tscn::PackedScene::1996408115258799401::1732141876::0::1::::<><>::uid://drt58mt48yk0g::::res://nodes/Character/main_character.tscn<>uid://ccafw0babu8j0::::res://nodes/Enemies/Enemy 1/Enemy 1.2/enemy_1_2.tscn<>uid://bt3nt5enytjko::::res://icon.svg<>uid://de1yrn3yccwmn::::res://Abel - recursos/Mansión y velas/mainlevbuild.png

@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://b7iftsqvwenku" path="res://Assets/Niña/Walk/walk_up.png" id="7_ljy1s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6lr7q"]
-size = Vector2(100, 81.5)
+size = Vector2(28, 22.375)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j8hhf"]
 atlas = ExtResource("1_hbwp7")
@@ -443,17 +443,16 @@ animations = [{
 }]
 
 [node name="Character_main" type="CharacterBody2D"]
-position = Vector2(0, -2)
 collision_layer = 2
 collision_mask = 3
 script = ExtResource("1_5tico")
 
 [node name="ColNiña" type="CollisionShape2D" parent="."]
-position = Vector2(-0.249939, 2.00006)
+position = Vector2(-3, 4)
 shape = SubResource("RectangleShape2D_6lr7q")
 
 [node name="AnimNiña" type="AnimatedSprite2D" parent="."]
-position = Vector2(-0.249954, -18.2499)
-scale = Vector2(7.07292, 5.55469)
+position = Vector2(-1, -0.999969)
+scale = Vector2(1.6875, 1.44531)
 sprite_frames = SubResource("SpriteFrames_mrgw4")
 animation = &"Idle"
