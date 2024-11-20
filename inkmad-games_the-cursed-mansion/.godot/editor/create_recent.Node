@@ -1,7 +1,9 @@
+Camera2D
+PointLight2D
+DirectionalLight2D
 NavigationRegion2D
 NavigationAgent2D
 CharacterBody2D
-Camera2D
 Timer
 TileMap
 NavigationLink2D
