@@ -1,9 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://3pcsx1nk5dk0"]
+[gd_scene load_steps=11 format=3 uid="uid://3pcsx1nk5dk0"]
 
+[ext_resource type="Texture2D" uid="uid://dmfdslul83ufk" path="res://Salas/wood-texture-background-wood-planks-or-wood-wall-free-photo.jpg" id="1_iesub"]
 [ext_resource type="PackedScene" uid="uid://drt58mt48yk0g" path="res://nodes/Character/main_character.tscn" id="1_yjgeo"]
 [ext_resource type="PackedScene" uid="uid://ccafw0babu8j0" path="res://nodes/Enemies/Enemy 1/Enemy 1.2/enemy_1_2.tscn" id="2_e1n15"]
 [ext_resource type="Texture2D" uid="uid://bt3nt5enytjko" path="res://icon.svg" id="2_vdyji"]
 [ext_resource type="Texture2D" uid="uid://de1yrn3yccwmn" path="res://Abel - recursos/Mansión y velas/mainlevbuild.png" id="5_xvxhy"]
+[ext_resource type="PackedScene" uid="uid://ce7u5u0igniun" path="res://nodes/Enemies/Enemy 1/enemy_1.tscn" id="6_sy0r2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cwj43"]
 size = Vector2(460, 124)
@@ -1039,11 +1041,16 @@ texture = ExtResource("5_xvxhy")
 sources/0 = SubResource("TileSetAtlasSource_f53g2")
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_pen7x"]
-vertices = PackedVector2Array(810.867, 326.141, 1067.45, 322.156, 1052.49, 610.094, 866.719, 611.992, 682.727, 584, 36.1328, 587.93, 37.9766, 451.461, 139.508, 98.0625, 790.852, 103.906)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4), PackedInt32Array(4, 5, 6, 7, 8, 0)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(132, 88, 28, 450, 26, 598, 682, 594, 866, 622, 1062, 620, 1078, 312, 820, 316, 800, 94)])
+vertices = PackedVector2Array(998.25, 42.0078, 1067.93, 312.977, 1052.53, 609.422, 688.289, 588, 36, 43.9688, 36, 588)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4), PackedInt32Array(3, 5, 4)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(26, 34, 26, 598, 688, 598, 1062, 620, 1078, 312, 1006, 32)])
 
 [node name="scena_1" type="Node2D"]
+
+[node name="Wood-texture-background-wood-planks-or-wood-wall-free-photo" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(644, 504)
+texture = ExtResource("1_iesub")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
@@ -1076,8 +1083,15 @@ format = 2
 layer_0/tile_data = PackedInt32Array(2424886, 2752512, 10, 2359350, 2752512, 10, 2293814, 2752512, 10, 2228278, 2752512, 10, 2162742, 2752512, 10, 2031670, 2752512, 10, 1966134, 2752512, 10, 1900598, 2752512, 10, 1835062, 2752512, 10, 1769526, 2752512, 10, 1703990, 2752512, 10, 1638454, 2752512, 10, 1572918, 2752512, 10, 1507382, 2752512, 10, 2097206, 2752512, 10)
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+visible = false
+position = Vector2(0, 12)
 navigation_polygon = SubResource("NavigationPolygon_pen7x")
 
 [node name="Enemy_1_2" parent="." node_paths=PackedStringArray("player") instance=ExtResource("2_e1n15")]
+visible = false
 position = Vector2(1000, 468)
+player = NodePath("../Character_main")
+
+[node name="Enemy_1" parent="." node_paths=PackedStringArray("player") instance=ExtResource("6_sy0r2")]
+position = Vector2(748, 516)
 player = NodePath("../Character_main")

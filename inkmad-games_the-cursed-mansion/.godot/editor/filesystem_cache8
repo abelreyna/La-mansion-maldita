@@ -1,8 +1,8 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1732083085
+::res://::1732142220
 icon.svg::CompressedTexture2D::3778636123422759230::1731887524::1732035476::1::::<><>::
 node_2d.tscn::PackedScene::3387427309765024237::1731887677::0::1::::<><>::
-Scene_prueba1.tscn::PackedScene::3368633722860796382::1732082761::0::1::::<><>::uid://bt3nt5enytjko::::res://icon.svg<>uid://drt58mt48yk0g::::res://nodes/Character/main_character.tscn<>uid://ccafw0babu8j0::::res://nodes/Enemies/Enemy 1/Enemy 1.2/enemy_1_2.tscn
+Scene_prueba1.tscn::PackedScene::3368633722860796382::1732142031::0::1::::<><>::uid://bt3nt5enytjko::::res://icon.svg<>uid://drt58mt48yk0g::::res://nodes/Character/main_character.tscn<>uid://ccafw0babu8j0::::res://nodes/Enemies/Enemy 1/Enemy 1.2/enemy_1_2.tscn
 ::res://Abel - recursos/::1732035433
 ::res://Abel - recursos/Mansión y velas/::1732035476
 candleA_01.png::CompressedTexture2D::1927156938172689482::1732035433::1732035476::1::::<><>::
@@ -24,8 +24,8 @@ torch_1.png::CompressedTexture2D::892418050990368392::1732035433::1732035476::1:
 torch_2.png::CompressedTexture2D::6958880151632553635::1732035433::1732035476::1::::<><>::
 torch_3.png::CompressedTexture2D::6101369570490772538::1732035433::1732035476::1::::<><>::
 torch_4.png::CompressedTexture2D::1313947282721561334::1732035433::1732035476::1::::<><>::
-::res://Assets/::1731890070
-::res://Assets/Niña/::1732035476
+::res://Assets/::1732140003
+::res://Assets/Niña/::1732140003
 frame dimensions.png::CompressedTexture2D::1979431327436229880::1722728257::1732035476::1::::<><>::
 Shadow.png::CompressedTexture2D::6043113136978848463::1722724995::1732035476::1::::<><>::
 ::res://Assets/Niña/Death/::1732035476
@@ -52,6 +52,8 @@ idle_left_up.png::CompressedTexture2D::6010537820879188773::1722390058::17320354
 idle_right_down.png::CompressedTexture2D::8398065138452761008::1722389936::1732035476::1::::<><>::
 idle_right_up.png::CompressedTexture2D::6197139500948083079::1722390021::1732035476::1::::<><>::
 idle_up.png::CompressedTexture2D::5781754455329172829::1722389859::1732035476::1::::<><>::
+::res://Assets/Niña/Idle_with_flashlight/::1732140177
+idle_down_withflashlight.png::CompressedTexture2D::892591528658612367::1732140003::1732140177::1::::<><>::
 ::res://Assets/Niña/Walk/::1732035476
 walk.png::CompressedTexture2D::3967097235348902574::1722717304::1732035476::1::::<><>::
 walk_down.png::CompressedTexture2D::8871737777637496000::1722717222::1732035476::1::::<><>::
@@ -60,18 +62,46 @@ walk_left_up.png::CompressedTexture2D::1968716067770114108::1722717237::17320354
 walk_right_down.png::CompressedTexture2D::9188271224695173026::1722717243::1732035476::1::::<><>::
 walk_right_up.png::CompressedTexture2D::4687312872756905974::1722717249::1732035476::1::::<><>::
 walk_up.png::CompressedTexture2D::4649317188311530044::1722717253::1732035476::1::::<><>::
+::res://Assets/Niña/Walk_with_flashlight/::1732140177
+walk_down_withflashlight.png::CompressedTexture2D::6613307987997083781::1732140003::1732140177::1::::<><>::
+walk_left_down_withflashlight.png::CompressedTexture2D::7487511097670484954::1732140003::1732140177::1::::<><>::
+walk_left_up_withflashlight.png::CompressedTexture2D::6550440250661545517::1732140003::1732140177::1::::<><>::
+walk_right_down_withflashlight.png::CompressedTexture2D::6207880165305600883::1732140003::1732140177::1::::<><>::
+walk_right_up_withflashlight.png::CompressedTexture2D::285446139886032482::1732140003::1732140177::1::::<><>::
+walk_up_withflashlight.png::CompressedTexture2D::5185164021939310051::1732140003::1732140177::1::::<><>::
+::res://Assets/Sounds/::1732140003
+::res://Assets/Sounds/Ambience/::1732140177
+creepy-vocal-ambience-6074.mp3::AudioStreamMP3::5131644308222288644::1732140003::1732140177::1::::<><>::
+distant-horror-ambient-56014.mp3::AudioStreamMP3::6177401255541626896::1732140003::1732140177::1::::<><>::
+horror-ambience-17601.mp3::AudioStreamMP3::2491746408216547351::1732140003::1732140177::1::::<><>::
+horror-background-atmosphere-156462.mp3::AudioStreamMP3::7116606730116756065::1732140003::1732140177::1::::<><>::
+nightmare-designs-113489.mp3::AudioStreamMP3::6478627824293313269::1732140003::1732140177::1::::<><>::
+::res://Assets/Sounds/Door/::1732140177
+door-open-close-45475.mp3::AudioStreamMP3::5690990394271088978::1732140003::1732140177::1::::<><>::
+dorm-door-opening-6038.mp3::AudioStreamMP3::1820127710297311411::1732140003::1732140177::1::::<><>::
+open-and-closed-door-156814.mp3::AudioStreamMP3::2247088201820728444::1732140003::1732140177::1::::<><>::
+open-doors-114615.mp3::AudioStreamMP3::8699184928826587481::1732140003::1732140177::1::::<><>::
+::res://Assets/Sounds/Flashlight/::1732140177
+flashlight-102291.mp3::AudioStreamMP3::6913960679253805173::1732140003::1732140177::1::::<><>::
+flashlight-clicking-on-105809.mp3::AudioStreamMP3::6645771075042458754::1732140003::1732140177::1::::<><>::
+flashlight-switch-102792.mp3::AudioStreamMP3::1117567177769393975::1732140003::1732140177::1::::<><>::
+::res://Assets/Sounds/Walking/::1732140177
+walking-on-a-wooden-floor-32056.mp3::AudioStreamMP3::5070420379603960486::1732140003::1732140177::1::::<><>::
+walking-on-a-wooden-floor-72829.mp3::AudioStreamMP3::3493603341880283164::1732140003::1732140177::1::::<><>::
+walking-on-wooden-floor-94493.mp3::AudioStreamMP3::5822397341434319653::1732140003::1732140177::1::::<><>::
 ::res://nodes/::1732074582
 test_room.tscn::PackedScene::4812162983068143215::1731891388::0::1::::<><>::
-::res://nodes/Character/::1732082454
+::res://nodes/Character/::1732142031
 main_character.gd::GDScript::-1::1732079122::0::1::::<>CharacterBody2D<>::
-main_character.tscn::PackedScene::8393576672229012656::1732082454::0::1::::<><>::res://nodes/Character/main_character.gd<>uid://dh12ye7g8p1yo::::res://Assets/Niña/Idle/idle_down.png<>uid://dynshwehdnqtc::::res://Assets/Niña/Walk/walk_down.png<>uid://2xkcp1k2q5n6::::res://Assets/Niña/Walk/walk_left_down.png<>uid://3bwp3x12adwu::::res://Assets/Niña/Walk/walk_left_up.png<>uid://d354qqit52b1s::::res://Assets/Niña/Walk/walk_right_down.png<>uid://b71tmgcjj364q::::res://Assets/Niña/Walk/walk_right_up.png<>uid://b7iftsqvwenku::::res://Assets/Niña/Walk/walk_up.png
+main_character.tscn::PackedScene::8393576672229012656::1732142031::0::1::::<><>::res://nodes/Character/main_character.gd<>uid://dh12ye7g8p1yo::::res://Assets/Niña/Idle/idle_down.png<>uid://dynshwehdnqtc::::res://Assets/Niña/Walk/walk_down.png<>uid://2xkcp1k2q5n6::::res://Assets/Niña/Walk/walk_left_down.png<>uid://3bwp3x12adwu::::res://Assets/Niña/Walk/walk_left_up.png<>uid://d354qqit52b1s::::res://Assets/Niña/Walk/walk_right_down.png<>uid://b71tmgcjj364q::::res://Assets/Niña/Walk/walk_right_up.png<>uid://b7iftsqvwenku::::res://Assets/Niña/Walk/walk_up.png
 ::res://nodes/Enemies/::1732074630
-::res://nodes/Enemies/Enemy 1/::1732082514
+::res://nodes/Enemies/Enemy 1/::1732141382
 AnimationSheet_Character.png::CompressedTexture2D::8181656838289333635::1732074692::1732074715::1::::<><>::
-enemy_1.gd::GDScript::-1::1732081914::0::1::::<>CharacterBody2D<>::
+enemy_1.gd::GDScript::-1::1732141382::0::1::::<>CharacterBody2D<>::
 enemy_1.tscn::PackedScene::5120925833199856221::1732082514::0::1::::<><>::uid://dotixs3xvpc7t::::res://nodes/Enemies/Enemy 1/AnimationSheet_Character.png<>res://nodes/Enemies/Enemy 1/enemy_1.gd
-::res://nodes/Enemies/Enemy 1/Enemy 1.2/::1732082761
+::res://nodes/Enemies/Enemy 1/Enemy 1.2/::1732142031
 enemy_1_2.gd::GDScript::-1::1732082673::0::1::::<>CharacterBody2D<>::
-enemy_1_2.tscn::PackedScene::4913563241722725823::1732082761::0::1::::<><>::res://nodes/Enemies/Enemy 1/Enemy 1.2/enemy_1_2.gd<>uid://dotixs3xvpc7t::::res://nodes/Enemies/Enemy 1/AnimationSheet_Character.png
-::res://Salas/::1732082760
-scena_1.tscn::PackedScene::1996408115258799401::1732082760::0::1::::<><>::uid://drt58mt48yk0g::::res://nodes/Character/main_character.tscn<>uid://ccafw0babu8j0::::res://nodes/Enemies/Enemy 1/Enemy 1.2/enemy_1_2.tscn<>uid://bt3nt5enytjko::::res://icon.svg<>uid://de1yrn3yccwmn::::res://Abel - recursos/Mansión y velas/mainlevbuild.png
+enemy_1_2.tscn::PackedScene::4913563241722725823::1732142031::0::1::::<><>::res://nodes/Enemies/Enemy 1/Enemy 1.2/enemy_1_2.gd<>uid://dotixs3xvpc7t::::res://nodes/Enemies/Enemy 1/AnimationSheet_Character.png
+::res://Salas/::1732142031
+scena_1.tscn::PackedScene::1996408115258799401::1732142031::0::1::::<><>::uid://dmfdslul83ufk::::res://Salas/wood-texture-background-wood-planks-or-wood-wall-free-photo.jpg<>uid://drt58mt48yk0g::::res://nodes/Character/main_character.tscn<>uid://ccafw0babu8j0::::res://nodes/Enemies/Enemy 1/Enemy 1.2/enemy_1_2.tscn<>uid://bt3nt5enytjko::::res://icon.svg<>uid://de1yrn3yccwmn::::res://Abel - recursos/Mansión y velas/mainlevbuild.png<>uid://ce7u5u0igniun::::res://nodes/Enemies/Enemy 1/enemy_1.tscn
+wood-texture-background-wood-planks-or-wood-wall-free-photo.jpg::CompressedTexture2D::8012064967972530644::1732140133::1732140178::1::::<><>::
