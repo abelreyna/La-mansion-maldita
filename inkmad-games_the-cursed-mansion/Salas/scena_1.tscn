@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://3pcsx1nk5dk0"]
+[gd_scene load_steps=36 format=3 uid="uid://3pcsx1nk5dk0"]
 
 [ext_resource type="Texture2D" uid="uid://dmfdslul83ufk" path="res://Salas/wood-texture-background-wood-planks-or-wood-wall-free-photo.jpg" id="1_iesub"]
 [ext_resource type="PackedScene" uid="uid://drt58mt48yk0g" path="res://nodes/Character/main_character.tscn" id="1_yjgeo"]
@@ -32,6 +32,7 @@
 [ext_resource type="Texture2D" uid="uid://f5k7ch4662of" path="res://suelo/torch_1.png" id="30_tmlrb"]
 [ext_resource type="Texture2D" uid="uid://drurbqloovd0l" path="res://suelo/spike_4.png" id="31_c04sw"]
 [ext_resource type="Texture2D" uid="uid://i6gml0fuotmc" path="res://suelo/decorative (4).png" id="32_n8sjk"]
+[ext_resource type="PackedScene" uid="uid://ftcpjl30weae" path="res://tile_map.tscn" id="33_07jr1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cwj43"]
 size = Vector2(460, 124)
@@ -66,17 +67,6 @@ texture = ExtResource("2_vdyji")
 position = Vector2(288, 516)
 shape = SubResource("RectangleShape2D_cwj43")
 
-[node name="Character_main" parent="." instance=ExtResource("1_yjgeo")]
-position = Vector2(1311, 280)
-
-[node name="Camera2D" type="Camera2D" parent="Character_main"]
-position = Vector2(3, 8)
-zoom = Vector2(1.5, 1.5)
-
-[node name="Enemy_1" parent="." node_paths=PackedStringArray("player") instance=ExtResource("6_sy0r2")]
-position = Vector2(748, 516)
-player = NodePath("../Character_main")
-
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
 color = Color(0.41598, 0.41598, 0.41598, 1)
 blend_mode = 1
@@ -93,2523 +83,2536 @@ position = Vector2(330, 423)
 scale = Vector2(3.17188, 1.89844)
 texture = ExtResource("5_mcgor")
 
-[node name="Piso3" type="Sprite2D" parent="."]
+[node name="Mansión" type="Sprite2D" parent="."]
+
+[node name="Piso3" type="Sprite2D" parent="Mansión"]
 position = Vector2(178, 3887)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso4" type="Sprite2D" parent="."]
+[node name="Piso4" type="Sprite2D" parent="Mansión"]
 position = Vector2(1369.75, 5618.63)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso5" type="Sprite2D" parent="."]
+[node name="Piso5" type="Sprite2D" parent="Mansión"]
 position = Vector2(1369.37, 5279.63)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso6" type="Sprite2D" parent="."]
+[node name="Piso6" type="Sprite2D" parent="Mansión"]
 position = Vector2(1371.37, 4940.63)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso7" type="Sprite2D" parent="."]
+[node name="Piso7" type="Sprite2D" parent="Mansión"]
 position = Vector2(1342.19, 4625.81)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso8" type="Sprite2D" parent="."]
+[node name="Piso8" type="Sprite2D" parent="Mansión"]
 position = Vector2(975.375, 4573.63)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso9" type="Sprite2D" parent="."]
+[node name="Piso9" type="Sprite2D" parent="Mansión"]
 position = Vector2(578.375, 4573.63)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso8" type="Sprite2D" parent="Piso9"]
+[node name="Piso8" type="Sprite2D" parent="Mansión/Piso9"]
 visible = false
 position = Vector2(551.095, 796.795)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso10" type="Sprite2D" parent="."]
+[node name="Piso10" type="Sprite2D" parent="Mansión"]
 position = Vector2(181.375, 4573.63)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso11" type="Sprite2D" parent="."]
+[node name="Piso11" type="Sprite2D" parent="Mansión"]
 position = Vector2(-215.625, 4222.63)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso12" type="Sprite2D" parent="."]
+[node name="Piso12" type="Sprite2D" parent="Mansión"]
 position = Vector2(-243.625, 4611.63)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso13" type="Sprite2D" parent="."]
+[node name="Piso13" type="Sprite2D" parent="Mansión"]
 position = Vector2(-216.625, 3870.63)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso14" type="Sprite2D" parent="."]
+[node name="Piso14" type="Sprite2D" parent="Mansión"]
 position = Vector2(-216.625, 3518.63)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso15" type="Sprite2D" parent="."]
+[node name="Piso15" type="Sprite2D" parent="Mansión"]
 position = Vector2(-215.813, 3166.63)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso16" type="Sprite2D" parent="."]
+[node name="Piso16" type="Sprite2D" parent="Mansión"]
 position = Vector2(-243.813, 2857.63)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso17" type="Sprite2D" parent="."]
+[node name="Piso17" type="Sprite2D" parent="Mansión"]
 position = Vector2(-600.813, 2803.63)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso18" type="Sprite2D" parent="."]
+[node name="Piso18" type="Sprite2D" parent="Mansión"]
 position = Vector2(-987.813, 2802.63)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso19" type="Sprite2D" parent="."]
+[node name="Piso19" type="Sprite2D" parent="Mansión"]
 position = Vector2(-984.813, 2454.63)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso20" type="Sprite2D" parent="."]
+[node name="Piso20" type="Sprite2D" parent="Mansión"]
 position = Vector2(-1015.81, 2144.63)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Mainlevbuild2" type="Sprite2D" parent="."]
+[node name="Mainlevbuild2" type="Sprite2D" parent="Mansión"]
 position = Vector2(2148.06, 6336)
 scale = Vector2(12.0049, 10.8826)
 texture = ExtResource("8_xkbce")
 
-[node name="Mainlevbuild3" type="Sprite2D" parent="."]
+[node name="Mainlevbuild3" type="Sprite2D" parent="Mansión"]
 position = Vector2(2517.63, 6336.81)
 scale = Vector2(12.0613, 10.9311)
 texture = ExtResource("8_xkbce")
 
-[node name="Mainlevbuild4" type="Sprite2D" parent="."]
+[node name="Mainlevbuild4" type="Sprite2D" parent="Mansión"]
 position = Vector2(2899.19, 6336.63)
 scale = Vector2(12.0613, 10.9311)
 texture = ExtResource("8_xkbce")
 
-[node name="Mainlevbuild5" type="Sprite2D" parent="."]
+[node name="Mainlevbuild5" type="Sprite2D" parent="Mansión"]
 position = Vector2(4415, 7107)
 scale = Vector2(13.3333, 10.9311)
 texture = ExtResource("8_xkbce")
 
-[node name="Piso22" type="Sprite2D" parent="."]
+[node name="Piso22" type="Sprite2D" parent="Mansión"]
 position = Vector2(1342.19, 6349.63)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Mainlevbuild6" type="Sprite2D" parent="."]
+[node name="Mainlevbuild6" type="Sprite2D" parent="Mansión"]
 position = Vector2(2158, 6665)
 scale = Vector2(12.7868, 10.8826)
 texture = ExtResource("8_xkbce")
 
-[node name="Mainlevbuild7" type="Sprite2D" parent="."]
+[node name="Mainlevbuild7" type="Sprite2D" parent="Mansión"]
 position = Vector2(3663.19, 6336.63)
 scale = Vector2(12.0613, 10.9311)
 texture = ExtResource("8_xkbce")
 
-[node name="Mainlevbuild8" type="Sprite2D" parent="."]
+[node name="Mainlevbuild8" type="Sprite2D" parent="Mansión"]
 position = Vector2(4036.19, 6336.63)
 scale = Vector2(12.0613, 10.9311)
 texture = ExtResource("8_xkbce")
 
-[node name="Piso23" type="Sprite2D" parent="."]
+[node name="Piso23" type="Sprite2D" parent="Mansión"]
 position = Vector2(4391.09, 6358.53)
 scale = Vector2(12.0446, 10.9758)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso21" type="Sprite2D" parent="."]
+[node name="Piso21" type="Sprite2D" parent="Mansión"]
 position = Vector2(4412.19, 5970.63)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso24" type="Sprite2D" parent="."]
+[node name="Piso24" type="Sprite2D" parent="Mansión"]
 position = Vector2(4409.19, 5620.63)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso25" type="Sprite2D" parent="."]
+[node name="Piso25" type="Sprite2D" parent="Mansión"]
 position = Vector2(4409, 4645.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso26" type="Sprite2D" parent="."]
+[node name="Piso26" type="Sprite2D" parent="Mansión"]
 position = Vector2(4382, 5306.81)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso27" type="Sprite2D" parent="."]
+[node name="Piso27" type="Sprite2D" parent="Mansión"]
 position = Vector2(182, 4231)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso28" type="Sprite2D" parent="."]
+[node name="Piso28" type="Sprite2D" parent="Mansión"]
 position = Vector2(578, 4242)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso29" type="Sprite2D" parent="."]
+[node name="Piso29" type="Sprite2D" parent="Mansión"]
 position = Vector2(1765, 5304.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso30" type="Sprite2D" parent="."]
+[node name="Piso30" type="Sprite2D" parent="Mansión"]
 position = Vector2(2160, 5972.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso31" type="Sprite2D" parent="."]
+[node name="Piso31" type="Sprite2D" parent="Mansión"]
 position = Vector2(2160, 5638.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso32" type="Sprite2D" parent="."]
+[node name="Piso32" type="Sprite2D" parent="Mansión"]
 position = Vector2(1768, 4971.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso33" type="Sprite2D" parent="."]
+[node name="Piso33" type="Sprite2D" parent="Mansión"]
 position = Vector2(2555, 5964.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso34" type="Sprite2D" parent="."]
+[node name="Piso34" type="Sprite2D" parent="Mansión"]
 position = Vector2(2951, 5970.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso35" type="Sprite2D" parent="."]
+[node name="Piso35" type="Sprite2D" parent="Mansión"]
 position = Vector2(3348, 5970.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso36" type="Sprite2D" parent="."]
+[node name="Piso36" type="Sprite2D" parent="Mansión"]
 position = Vector2(3745, 5971.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso37" type="Sprite2D" parent="."]
+[node name="Piso37" type="Sprite2D" parent="Mansión"]
 position = Vector2(4094.81, 5971.81)
 scale = Vector2(5.14423, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Mainlevbuild(5)" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(5)" type="Sprite2D" parent="Mansión"]
 position = Vector2(4844, 5813)
 scale = Vector2(13.425, 12.7528)
 texture = ExtResource("9_10g44")
 
-[node name="Mainlevbuild(6)" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(6)" type="Sprite2D" parent="Mansión"]
 position = Vector2(4811, 5436)
 scale = Vector2(14.1581, 12.7646)
 texture = ExtResource("10_bpdn0")
 
-[node name="Piso38" type="Sprite2D" parent="."]
+[node name="Piso38" type="Sprite2D" parent="Mansión"]
 position = Vector2(2558, 5633.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso39" type="Sprite2D" parent="."]
+[node name="Piso39" type="Sprite2D" parent="Mansión"]
 position = Vector2(2951, 5630.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso40" type="Sprite2D" parent="."]
+[node name="Piso40" type="Sprite2D" parent="Mansión"]
 position = Vector2(3338, 5630.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso41" type="Sprite2D" parent="."]
+[node name="Piso41" type="Sprite2D" parent="Mansión"]
 position = Vector2(3728, 5633.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso42" type="Sprite2D" parent="."]
+[node name="Piso42" type="Sprite2D" parent="Mansión"]
 position = Vector2(4067.81, 5627.81)
 scale = Vector2(4.52884, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Mainlevbuild(6)2" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(6)2" type="Sprite2D" parent="Mansión"]
 position = Vector2(4822, 5027)
 scale = Vector2(14.1581, 12.7646)
 texture = ExtResource("10_bpdn0")
 
-[node name="Mainlevbuild(6)3" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(6)3" type="Sprite2D" parent="Mansión"]
 position = Vector2(5235.03, 5832.81)
 scale = Vector2(14.1581, 12.7646)
 texture = ExtResource("10_bpdn0")
 
-[node name="Mainlevbuild(6)4" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(6)4" type="Sprite2D" parent="Mansión"]
 position = Vector2(5240.03, 5024.81)
 scale = Vector2(14.1581, 12.7646)
 texture = ExtResource("10_bpdn0")
 
-[node name="Mainlevbuild(5)2" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(5)2" type="Sprite2D" parent="Mansión"]
 position = Vector2(5268, 5423.84)
 scale = Vector2(13.957, 13.1097)
 texture = ExtResource("9_10g44")
 
-[node name="Mainlevbuild(5)3" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(5)3" type="Sprite2D" parent="Mansión"]
 position = Vector2(5703.03, 5819.81)
 scale = Vector2(14.4889, 12.7528)
 texture = ExtResource("9_10g44")
 
-[node name="Mainlevbuild(5)4" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(5)4" type="Sprite2D" parent="Mansión"]
 position = Vector2(5707.03, 5015.81)
 scale = Vector2(13.425, 12.7528)
 texture = ExtResource("9_10g44")
 
-[node name="Mainlevbuild(6)5" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(6)5" type="Sprite2D" parent="Mansión"]
 position = Vector2(5668.03, 5427.81)
 scale = Vector2(14.1581, 12.7646)
 texture = ExtResource("10_bpdn0")
 
-[node name="Mainlevbuild(5)6" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(5)6" type="Sprite2D" parent="Mansión"]
 position = Vector2(6129.03, 6221.81)
 scale = Vector2(13.425, 12.7528)
 texture = ExtResource("9_10g44")
 
-[node name="Mainlevbuild(5)7" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(5)7" type="Sprite2D" parent="Mansión"]
 position = Vector2(6132.03, 7001.81)
 scale = Vector2(13.425, 12.7528)
 texture = ExtResource("9_10g44")
 
-[node name="Mainlevbuild(5)8" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(5)8" type="Sprite2D" parent="Mansión"]
 position = Vector2(6141.03, 5828.81)
 scale = Vector2(13.425, 12.7528)
 texture = ExtResource("9_10g44")
 
-[node name="Mainlevbuild(6)6" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(6)6" type="Sprite2D" parent="Mansión"]
 position = Vector2(6960.03, 5823.81)
 scale = Vector2(14.1581, 12.7646)
 texture = ExtResource("10_bpdn0")
 
-[node name="Mainlevbuild(6)7" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(6)7" type="Sprite2D" parent="Mansión"]
 position = Vector2(6106.55, 6614.83)
 scale = Vector2(13.7065, 12.7653)
 texture = ExtResource("10_bpdn0")
 
-[node name="Mainlevbuild(6)8" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(6)8" type="Sprite2D" parent="Mansión"]
 position = Vector2(6531.03, 6230.81)
 scale = Vector2(13.7065, 12.7653)
 texture = ExtResource("10_bpdn0")
 
-[node name="Mainlevbuild(6)9" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(6)9" type="Sprite2D" parent="Mansión"]
 position = Vector2(6539.03, 7014.81)
 scale = Vector2(13.7065, 12.7653)
 texture = ExtResource("10_bpdn0")
 
-[node name="Mainlevbuild(5)9" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(5)9" type="Sprite2D" parent="Mansión"]
 position = Vector2(6561.03, 6613.81)
 scale = Vector2(13.425, 12.7528)
 texture = ExtResource("9_10g44")
 
-[node name="Mainlevbuild(5)10" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(5)10" type="Sprite2D" parent="Mansión"]
 position = Vector2(6130.03, 5434.81)
 scale = Vector2(13.425, 12.7528)
 texture = ExtResource("9_10g44")
 
-[node name="Mainlevbuild(5)11" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(5)11" type="Sprite2D" parent="Mansión"]
 position = Vector2(6570.03, 5016.81)
 scale = Vector2(13.425, 12.7528)
 texture = ExtResource("9_10g44")
 
-[node name="Mainlevbuild(6)10" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(6)10" type="Sprite2D" parent="Mansión"]
 position = Vector2(6104.02, 5031.81)
 scale = Vector2(14.3143, 13.2766)
 texture = ExtResource("10_bpdn0")
 
-[node name="Mainlevbuild(6)11" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(6)11" type="Sprite2D" parent="Mansión"]
 position = Vector2(6526.03, 5431.81)
 scale = Vector2(14.3143, 13.2766)
 texture = ExtResource("10_bpdn0")
 
-[node name="Mainlevbuild(5)12" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(5)12" type="Sprite2D" parent="Mansión"]
 position = Vector2(6114.03, 4616.81)
 scale = Vector2(13.425, 12.7528)
 texture = ExtResource("9_10g44")
 
-[node name="Mainlevbuild(6)12" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(6)12" type="Sprite2D" parent="Mansión"]
 position = Vector2(6531.03, 4633.81)
 scale = Vector2(14.3143, 13.2766)
 texture = ExtResource("10_bpdn0")
 
-[node name="Mainlevbuild(6)13" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(6)13" type="Sprite2D" parent="Mansión"]
 position = Vector2(6102.03, 4212.81)
 scale = Vector2(14.3143, 14.0426)
 texture = ExtResource("10_bpdn0")
 
-[node name="Mainlevbuild(5)13" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(5)13" type="Sprite2D" parent="Mansión"]
 position = Vector2(6570, 4198.28)
 scale = Vector2(13.5569, 13.2653)
 texture = ExtResource("9_10g44")
 
-[node name="Mainlevbuild(5)14" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(5)14" type="Sprite2D" parent="Mansión"]
 position = Vector2(6117.03, 3773.81)
 scale = Vector2(13.5569, 13.2653)
 texture = ExtResource("9_10g44")
 
-[node name="Mainlevbuild(6)14" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(6)14" type="Sprite2D" parent="Mansión"]
 position = Vector2(6532.03, 3791.81)
 scale = Vector2(14.3143, 13.2766)
 texture = ExtResource("10_bpdn0")
 
-[node name="Mainlevbuild(6)15" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(6)15" type="Sprite2D" parent="Mansión"]
 position = Vector2(6528.03, 5836.81)
 scale = Vector2(14.1581, 12.7646)
 texture = ExtResource("10_bpdn0")
 
-[node name="Mainlevbuild(5)5" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(5)5" type="Sprite2D" parent="Mansión"]
 position = Vector2(6993.03, 5405.81)
 scale = Vector2(13.425, 12.7528)
 texture = ExtResource("9_10g44")
 
-[node name="Mainlevbuild(5)15" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(5)15" type="Sprite2D" parent="Mansión"]
 position = Vector2(7417.03, 5813.81)
 scale = Vector2(13.425, 12.7528)
 texture = ExtResource("9_10g44")
 
-[node name="Mainlevbuild(6)16" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(6)16" type="Sprite2D" parent="Mansión"]
 position = Vector2(6976.03, 5039.81)
 scale = Vector2(14.1581, 12.7646)
 texture = ExtResource("10_bpdn0")
 
-[node name="Mainlevbuild(6)17" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(6)17" type="Sprite2D" parent="Mansión"]
 position = Vector2(7400.03, 5439.81)
 scale = Vector2(14.1581, 12.7646)
 texture = ExtResource("10_bpdn0")
 
-[node name="Mainlevbuild(5)16" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(5)16" type="Sprite2D" parent="Mansión"]
 position = Vector2(7433.03, 5021.81)
 scale = Vector2(13.425, 12.7528)
 texture = ExtResource("9_10g44")
 
-[node name="Mainlevbuild(6)18" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(6)18" type="Sprite2D" parent="Mansión"]
 position = Vector2(7824.03, 5039.81)
 scale = Vector2(14.1581, 12.7646)
 texture = ExtResource("10_bpdn0")
 
-[node name="Mainlevbuild(6)19" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(6)19" type="Sprite2D" parent="Mansión"]
 position = Vector2(7823.03, 5823.81)
 scale = Vector2(14.1581, 12.7646)
 texture = ExtResource("10_bpdn0")
 
-[node name="Mainlevbuild(5)17" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(5)17" type="Sprite2D" parent="Mansión"]
 position = Vector2(7857.03, 5421.81)
 scale = Vector2(13.425, 12.7528)
 texture = ExtResource("9_10g44")
 
-[node name="Piso43" type="Sprite2D" parent="."]
+[node name="Piso43" type="Sprite2D" parent="Mansión"]
 position = Vector2(4409, 4973.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso44" type="Sprite2D" parent="."]
+[node name="Piso44" type="Sprite2D" parent="Mansión"]
 position = Vector2(4408, 4323.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso44" type="Sprite2D" parent="Piso44"]
+[node name="Piso44" type="Sprite2D" parent="Mansión/Piso44"]
 visible = false
 position = Vector2(4408, 4323.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso45" type="Sprite2D" parent="."]
+[node name="Piso45" type="Sprite2D" parent="Mansión"]
 position = Vector2(4408, 4049.81)
 scale = Vector2(6.22692, 3.44117)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso46" type="Sprite2D" parent="."]
+[node name="Piso46" type="Sprite2D" parent="Mansión"]
 position = Vector2(4382, 3799.81)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso47" type="Sprite2D" parent="."]
+[node name="Piso47" type="Sprite2D" parent="Mansión"]
 position = Vector2(2866.19, 4228)
 scale = Vector2(7.69808, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso48" type="Sprite2D" parent="."]
+[node name="Piso48" type="Sprite2D" parent="Mansión"]
 position = Vector2(3264, 4223)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso49" type="Sprite2D" parent="."]
+[node name="Piso49" type="Sprite2D" parent="Mansión"]
 position = Vector2(3616, 4231)
 scale = Vector2(6.22692, 6.14706)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso50" type="Sprite2D" parent="."]
+[node name="Piso50" type="Sprite2D" parent="Mansión"]
 position = Vector2(-599, 2088.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso51" type="Sprite2D" parent="."]
+[node name="Piso51" type="Sprite2D" parent="Mansión"]
 position = Vector2(-588, 2446.31)
 scale = Vector2(6.22692, 5.83824)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso52" type="Sprite2D" parent="."]
+[node name="Piso52" type="Sprite2D" parent="Mansión"]
 position = Vector2(-203, 2085.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso53" type="Sprite2D" parent="."]
+[node name="Piso53" type="Sprite2D" parent="Mansión"]
 position = Vector2(-209, 2444.81)
 scale = Vector2(6.22692, 6.08823)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso54" type="Sprite2D" parent="."]
+[node name="Piso54" type="Sprite2D" parent="Mansión"]
 position = Vector2(185, 2084.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso55" type="Sprite2D" parent="."]
+[node name="Piso55" type="Sprite2D" parent="Mansión"]
 position = Vector2(1348, 2085.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso55" type="Sprite2D" parent="Piso55"]
+[node name="Piso55" type="Sprite2D" parent="Mansión/Piso55"]
 visible = false
 position = Vector2(435.689, 1255.85)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso56" type="Sprite2D" parent="."]
+[node name="Piso56" type="Sprite2D" parent="Mansión"]
 position = Vector2(968, 2084.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso55" type="Sprite2D" parent="Piso56"]
+[node name="Piso55" type="Sprite2D" parent="Mansión/Piso56"]
 visible = false
 position = Vector2(885.349, 1375.12)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso57" type="Sprite2D" parent="."]
+[node name="Piso57" type="Sprite2D" parent="Mansión"]
 position = Vector2(1731, 2085.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso55" type="Sprite2D" parent="Piso57"]
+[node name="Piso55" type="Sprite2D" parent="Mansión/Piso57"]
 visible = false
 position = Vector2(795.417, 1433.31)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso58" type="Sprite2D" parent="."]
+[node name="Piso58" type="Sprite2D" parent="Mansión"]
 position = Vector2(2507, 2437.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso55" type="Sprite2D" parent="Piso58"]
+[node name="Piso55" type="Sprite2D" parent="Mansión/Piso58"]
 visible = false
 position = Vector2(407.424, 1165.67)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso59" type="Sprite2D" parent="."]
+[node name="Piso59" type="Sprite2D" parent="Mansión"]
 position = Vector2(576, 2084.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso55" type="Sprite2D" parent="Piso59"]
+[node name="Piso55" type="Sprite2D" parent="Mansión/Piso59"]
 visible = false
 position = Vector2(772.292, 1328.58)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso60" type="Sprite2D" parent="."]
+[node name="Piso60" type="Sprite2D" parent="Mansión"]
 position = Vector2(1314, 2416)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso55" type="Sprite2D" parent="Piso60"]
+[node name="Piso55" type="Sprite2D" parent="Mansión/Piso60"]
 visible = false
 position = Vector2(145.337, 959.124)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso61" type="Sprite2D" parent="."]
+[node name="Piso61" type="Sprite2D" parent="Mansión"]
 position = Vector2(2126, 2083.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso55" type="Sprite2D" parent="Piso61"]
+[node name="Piso55" type="Sprite2D" parent="Mansión/Piso61"]
 visible = false
 position = Vector2(397.146, 1154.03)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso62" type="Sprite2D" parent="."]
+[node name="Piso62" type="Sprite2D" parent="Mansión"]
 position = Vector2(2507, 2788.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso63" type="Sprite2D" parent="."]
+[node name="Piso63" type="Sprite2D" parent="Mansión"]
 position = Vector2(927, 2878)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso55" type="Sprite2D" parent="Piso63"]
+[node name="Piso55" type="Sprite2D" parent="Mansión/Piso63"]
 position = Vector2(199.778, 439.636)
 scale = Vector2(1.04262, 1.01604)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso64" type="Sprite2D" parent="."]
+[node name="Piso64" type="Sprite2D" parent="Mansión"]
 position = Vector2(2485, 2138.81)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Mainlevbuild(7)" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(7)" type="Sprite2D" parent="Mansión"]
 position = Vector2(5273, 4184)
 scale = Vector2(17.7674, 17.4318)
 texture = ExtResource("11_cb0po")
 
-[node name="Mainlevbuild(7)2" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(7)2" type="Sprite2D" parent="Mansión"]
 position = Vector2(7417.03, 4200)
 scale = Vector2(17.7674, 17.4318)
 texture = ExtResource("11_cb0po")
 
-[node name="Mainlevbuild(7)3" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(7)3" type="Sprite2D" parent="Mansión"]
 position = Vector2(5278, 6626)
 scale = Vector2(17.3954, 16.6136)
 texture = ExtResource("11_cb0po")
 
-[node name="Mainlevbuild(7)4" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(7)4" type="Sprite2D" parent="Mansión"]
 position = Vector2(7430.03, 6594)
 scale = Vector2(17.7674, 16.6136)
 texture = ExtResource("11_cb0po")
 
-[node name="CandleB01" type="Sprite2D" parent="."]
+[node name="CandleB01" type="Sprite2D" parent="Mansión"]
 position = Vector2(6789.03, 4834)
 scale = Vector2(9.23078, 9.56251)
 texture = ExtResource("12_vrqy2")
 
-[node name="CandleB02" type="Sprite2D" parent="."]
+[node name="CandleB02" type="Sprite2D" parent="Mansión"]
 position = Vector2(6806.03, 5918)
 scale = Vector2(9.23078, 9.56251)
 texture = ExtResource("12_vrqy2")
 
-[node name="CandleB03" type="Sprite2D" parent="."]
+[node name="CandleB03" type="Sprite2D" parent="Mansión"]
 position = Vector2(5886.03, 4847)
 scale = Vector2(9.23078, 9.56251)
 texture = ExtResource("12_vrqy2")
 
-[node name="CandleB04" type="Sprite2D" parent="."]
+[node name="CandleB04" type="Sprite2D" parent="Mansión"]
 position = Vector2(5862.03, 5934)
 scale = Vector2(9.23078, 9.56251)
 texture = ExtResource("12_vrqy2")
 
-[node name="Piso65" type="Sprite2D" parent="."]
+[node name="Piso65" type="Sprite2D" parent="Mansión"]
 position = Vector2(2519, 5350)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso66" type="Sprite2D" parent="."]
+[node name="Piso66" type="Sprite2D" parent="Mansión"]
 position = Vector2(2134, 5028)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso67" type="Sprite2D" parent="."]
+[node name="Piso67" type="Sprite2D" parent="Mansión"]
 position = Vector2(2519, 5028)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso68" type="Sprite2D" parent="."]
+[node name="Piso68" type="Sprite2D" parent="Mansión"]
 position = Vector2(2513, 4652.09)
 scale = Vector2(12.4566, 12.2411)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso69" type="Sprite2D" parent="."]
+[node name="Piso69" type="Sprite2D" parent="Mansión"]
 position = Vector2(2904.09, 5019.09)
 scale = Vector2(13.1059, 11.8737)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso70" type="Sprite2D" parent="."]
+[node name="Piso70" type="Sprite2D" parent="Mansión"]
 position = Vector2(3989, 5339)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso71" type="Sprite2D" parent="."]
+[node name="Piso71" type="Sprite2D" parent="Mansión"]
 position = Vector2(3604, 5339)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso72" type="Sprite2D" parent="."]
+[node name="Piso72" type="Sprite2D" parent="Mansión"]
 position = Vector2(3983, 5011)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso73" type="Sprite2D" parent="."]
+[node name="Piso73" type="Sprite2D" parent="Mansión"]
 position = Vector2(2940, 5314)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso74" type="Sprite2D" parent="."]
+[node name="Piso74" type="Sprite2D" parent="Mansión"]
 position = Vector2(3287.81, 5280)
 scale = Vector2(4.92885, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso75" type="Sprite2D" parent="."]
+[node name="Piso75" type="Sprite2D" parent="Mansión"]
 position = Vector2(3336, 4957)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso76" type="Sprite2D" parent="."]
+[node name="Piso76" type="Sprite2D" parent="Mansión"]
 position = Vector2(3636, 4957)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso77" type="Sprite2D" parent="."]
+[node name="Piso77" type="Sprite2D" parent="Mansión"]
 position = Vector2(1766.31, 4608.75)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="."]
+[node name="Piso78" type="Sprite2D" parent="Mansión"]
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso78"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso78"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso79" type="Sprite2D" parent="."]
+[node name="Piso79" type="Sprite2D" parent="Mansión"]
 position = Vector2(2926, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso79"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso79"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso80" type="Sprite2D" parent="."]
+[node name="Piso80" type="Sprite2D" parent="Mansión"]
 position = Vector2(3299, 4584.13)
 scale = Vector2(6.48269, 7.47426)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso80"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso80"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso81" type="Sprite2D" parent="."]
+[node name="Piso81" type="Sprite2D" parent="Mansión"]
 position = Vector2(3622, 4609)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso81"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso81"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso82" type="Sprite2D" parent="."]
+[node name="Piso82" type="Sprite2D" parent="Mansión"]
 position = Vector2(4005, 4609)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso82"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso82"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso83" type="Sprite2D" parent="."]
+[node name="Piso83" type="Sprite2D" parent="Mansión"]
 position = Vector2(1733, 5684)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso84" type="Sprite2D" parent="."]
+[node name="Piso84" type="Sprite2D" parent="Mansión"]
 position = Vector2(1733, 6006)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso85" type="Sprite2D" parent="."]
+[node name="Piso85" type="Sprite2D" parent="Mansión"]
 position = Vector2(1343, 6012)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Mainlevbuild(7)5" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(7)5" type="Sprite2D" parent="Mansión"]
 position = Vector2(2866, 5430)
 scale = Vector2(12.5233, 9.98864)
 texture = ExtResource("11_cb0po")
 
-[node name="Mainlevbuild(8)" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(8)" type="Sprite2D" parent="Mansión"]
 position = Vector2(2849, 4882)
 scale = Vector2(5.5641, 4.55128)
 texture = ExtResource("13_stor0")
 
-[node name="Mainlevbuild(8)2" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(8)2" type="Sprite2D" parent="Mansión"]
 position = Vector2(2091, 5453)
 scale = Vector2(5.5641, 4.55128)
 texture = ExtResource("13_stor0")
 
-[node name="Mainlevbuild(8)3" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(8)3" type="Sprite2D" parent="Mansión"]
 position = Vector2(2885, 6041)
 scale = Vector2(5.5641, 4.55128)
 texture = ExtResource("13_stor0")
 
-[node name="Mainlevbuild(8)4" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(8)4" type="Sprite2D" parent="Mansión"]
 position = Vector2(3596, 5436)
 scale = Vector2(5.5641, 4.55128)
 texture = ExtResource("13_stor0")
 
-[node name="Mainlevbuild(15)" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(15)" type="Sprite2D" parent="Mansión"]
 position = Vector2(2438, 4879)
 scale = Vector2(7.53125, 6.07217)
 texture = ExtResource("14_3ex3a")
 
-[node name="Mainlevbuild(15)2" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(15)2" type="Sprite2D" parent="Mansión"]
 position = Vector2(3281, 4879)
 scale = Vector2(7.53125, 6.07217)
 texture = ExtResource("14_3ex3a")
 
-[node name="Mainlevbuild(15)3" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(15)3" type="Sprite2D" parent="Mansión"]
 position = Vector2(2399, 5580)
 scale = Vector2(7.53125, 6.07217)
 texture = ExtResource("14_3ex3a")
 
-[node name="Mainlevbuild(15)4" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(15)4" type="Sprite2D" parent="Mansión"]
 position = Vector2(3310, 5576)
 scale = Vector2(7.53125, 6.07217)
 texture = ExtResource("14_3ex3a")
 
-[node name="CandleB05" type="Sprite2D" parent="."]
+[node name="CandleB05" type="Sprite2D" parent="Mansión"]
 position = Vector2(2443, 4670)
 scale = Vector2(5.82692, 5.87498)
 texture = ExtResource("12_vrqy2")
 
-[node name="CandleB06" type="Sprite2D" parent="."]
+[node name="CandleB06" type="Sprite2D" parent="Mansión"]
 position = Vector2(3308, 5354)
 scale = Vector2(5.82692, 5.87498)
 texture = ExtResource("12_vrqy2")
 
-[node name="CandleA04" type="Sprite2D" parent="."]
+[node name="CandleA04" type="Sprite2D" parent="Mansión"]
 position = Vector2(2306, 5722)
 scale = Vector2(9.07142, 6.2857)
 texture = ExtResource("15_51n8a")
 
-[node name="CandleA05" type="Sprite2D" parent="."]
+[node name="CandleA05" type="Sprite2D" parent="Mansión"]
 position = Vector2(2486, 5815)
 scale = Vector2(9.07142, 6.2857)
 texture = ExtResource("15_51n8a")
 
-[node name="CandleA06" type="Sprite2D" parent="."]
+[node name="CandleA06" type="Sprite2D" parent="Mansión"]
 position = Vector2(3191, 4987)
 scale = Vector2(9.07142, 6.2857)
 texture = ExtResource("15_51n8a")
 
-[node name="CandleB07" type="Sprite2D" parent="."]
+[node name="CandleB07" type="Sprite2D" parent="Mansión"]
 position = Vector2(3382, 5049)
 scale = Vector2(5.82692, 5.87498)
 texture = ExtResource("12_vrqy2")
 
-[node name="Mainlevbuild9" type="Sprite2D" parent="."]
+[node name="Mainlevbuild9" type="Sprite2D" parent="Mansión"]
 position = Vector2(1374, 4265)
 scale = Vector2(12.7868, 10.8826)
 texture = ExtResource("8_xkbce")
 
-[node name="Mainlevbuild10" type="Sprite2D" parent="."]
+[node name="Mainlevbuild10" type="Sprite2D" parent="Mansión"]
 position = Vector2(1374, 3918)
 scale = Vector2(12.7868, 10.8826)
 texture = ExtResource("8_xkbce")
 
-[node name="Mainlevbuild11" type="Sprite2D" parent="."]
+[node name="Mainlevbuild11" type="Sprite2D" parent="Mansión"]
 position = Vector2(190, 2449)
 scale = Vector2(12.7868, 10.8826)
 texture = ExtResource("8_xkbce")
 
-[node name="Piso86" type="Sprite2D" parent="."]
+[node name="Piso86" type="Sprite2D" parent="Mansión"]
 position = Vector2(948, 4298)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso87" type="Sprite2D" parent="."]
+[node name="Piso87" type="Sprite2D" parent="Mansión"]
 position = Vector2(1740, 4306)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Mainlevbuild12" type="Sprite2D" parent="."]
+[node name="Mainlevbuild12" type="Sprite2D" parent="Mansión"]
 position = Vector2(190, 2790)
 scale = Vector2(12.7868, 10.8826)
 texture = ExtResource("8_xkbce")
 
-[node name="Piso88" type="Sprite2D" parent="."]
+[node name="Piso88" type="Sprite2D" parent="Mansión"]
 position = Vector2(564, 2802)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso89" type="Sprite2D" parent="."]
+[node name="Piso89" type="Sprite2D" parent="Mansión"]
 position = Vector2(148, 3162)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso90" type="Sprite2D" parent="."]
+[node name="Piso90" type="Sprite2D" parent="Mansión"]
 position = Vector2(178, 3498.5)
 scale = Vector2(6.22692, 7.25)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso91" type="Sprite2D" parent="."]
+[node name="Piso91" type="Sprite2D" parent="Mansión"]
 position = Vector2(570, 2415)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso92" type="Sprite2D" parent="."]
+[node name="Piso92" type="Sprite2D" parent="Mansión"]
 position = Vector2(578, 3895)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso93" type="Sprite2D" parent="."]
+[node name="Piso93" type="Sprite2D" parent="Mansión"]
 position = Vector2(970.688, 3902)
 scale = Vector2(6.575, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Mainlevbuild13" type="Sprite2D" parent="."]
+[node name="Mainlevbuild13" type="Sprite2D" parent="Mansión"]
 position = Vector2(2102, 2446)
 scale = Vector2(12.7868, 10.8826)
 texture = ExtResource("8_xkbce")
 
-[node name="Mainlevbuild14" type="Sprite2D" parent="."]
+[node name="Mainlevbuild14" type="Sprite2D" parent="Mansión"]
 position = Vector2(1702, 2446)
 scale = Vector2(12.7868, 10.8826)
 texture = ExtResource("8_xkbce")
 
-[node name="Mainlevbuild15" type="Sprite2D" parent="."]
+[node name="Mainlevbuild15" type="Sprite2D" parent="Mansión"]
 position = Vector2(2110, 2777)
 scale = Vector2(12.7868, 10.8826)
 texture = ExtResource("8_xkbce")
 
-[node name="Piso94" type="Sprite2D" parent="."]
+[node name="Piso94" type="Sprite2D" parent="Mansión"]
 position = Vector2(922, 2479)
 scale = Vector2(6.22692, 6.91177)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso95" type="Sprite2D" parent="."]
+[node name="Piso95" type="Sprite2D" parent="Mansión"]
 position = Vector2(571, 3095)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso96" type="Sprite2D" parent="."]
+[node name="Piso96" type="Sprite2D" parent="Mansión"]
 position = Vector2(571, 3531)
 scale = Vector2(6.22692, 8.20589)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso97" type="Sprite2D" parent="."]
+[node name="Piso97" type="Sprite2D" parent="Mansión"]
 position = Vector2(4412, 6701)
 scale = Vector2(6.22692, 6.67647)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso98" type="Sprite2D" parent="."]
+[node name="Piso98" type="Sprite2D" parent="Mansión"]
 position = Vector2(3292, 6317)
 scale = Vector2(6.22692, 5.7353)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso99" type="Sprite2D" parent="."]
+[node name="Piso99" type="Sprite2D" parent="Mansión"]
 position = Vector2(1763.81, 6301)
 scale = Vector2(6.46731, 5.7353)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso100" type="Sprite2D" parent="."]
+[node name="Piso100" type="Sprite2D" parent="Mansión"]
 position = Vector2(3271, 6732.09)
 scale = Vector2(12.4566, 12.5268)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso101" type="Sprite2D" parent="."]
+[node name="Piso101" type="Sprite2D" parent="Mansión"]
 position = Vector2(4036, 6677)
 scale = Vector2(6.22692, 6.67647)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso102" type="Sprite2D" parent="."]
+[node name="Piso102" type="Sprite2D" parent="Mansión"]
 position = Vector2(3692, 6669)
 scale = Vector2(6.22692, 6.67647)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso103" type="Sprite2D" parent="."]
+[node name="Piso103" type="Sprite2D" parent="Mansión"]
 position = Vector2(3991, 7122)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso104" type="Sprite2D" parent="."]
+[node name="Piso104" type="Sprite2D" parent="Mansión"]
 position = Vector2(3648, 7073)
 scale = Vector2(6.22692, 5.97059)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso105" type="Sprite2D" parent="."]
+[node name="Piso105" type="Sprite2D" parent="Mansión"]
 position = Vector2(1376, 6678)
 scale = Vector2(6.22692, 5.97059)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso106" type="Sprite2D" parent="."]
+[node name="Piso106" type="Sprite2D" parent="Mansión"]
 position = Vector2(1768, 6662)
 scale = Vector2(6.22692, 5.97059)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso107" type="Sprite2D" parent="."]
+[node name="Piso107" type="Sprite2D" parent="Mansión"]
 position = Vector2(2536, 6654)
 scale = Vector2(6.22692, 5.97059)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso108" type="Sprite2D" parent="."]
+[node name="Piso108" type="Sprite2D" parent="Mansión"]
 position = Vector2(2128, 7040)
 scale = Vector2(6.22692, 7.0294)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso109" type="Sprite2D" parent="."]
+[node name="Piso109" type="Sprite2D" parent="Mansión"]
 position = Vector2(3223, 7116)
 scale = Vector2(12.4566, 12.5268)
 texture = ExtResource("7_ajcd4")
 
-[node name="Mainlevbuild16" type="Sprite2D" parent="."]
+[node name="Mainlevbuild16" type="Sprite2D" parent="Mansión"]
 position = Vector2(2910, 6689.09)
 scale = Vector2(12.0613, 12.5676)
 texture = ExtResource("8_xkbce")
 
-[node name="Mainlevbuild17" type="Sprite2D" parent="."]
+[node name="Mainlevbuild17" type="Sprite2D" parent="Mansión"]
 position = Vector2(2870, 7084)
 scale = Vector2(12.0613, 12.5676)
 texture = ExtResource("8_xkbce")
 
-[node name="Piso110" type="Sprite2D" parent="."]
+[node name="Piso110" type="Sprite2D" parent="Mansión"]
 position = Vector2(2512, 7045)
 scale = Vector2(6.22692, 6.67646)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso111" type="Sprite2D" parent="."]
+[node name="Piso111" type="Sprite2D" parent="Mansión"]
 position = Vector2(1342, 7106.09)
 scale = Vector2(12.4566, 13.0166)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso112" type="Sprite2D" parent="."]
+[node name="Piso112" type="Sprite2D" parent="Mansión"]
 position = Vector2(1744, 7040)
 scale = Vector2(6.22692, 7.0294)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso113" type="Sprite2D" parent="."]
+[node name="Piso113" type="Sprite2D" parent="Mansión"]
 position = Vector2(935, 3243)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso113"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso113"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso114" type="Sprite2D" parent="."]
+[node name="Piso114" type="Sprite2D" parent="Mansión"]
 position = Vector2(935, 3571)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso114"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso114"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Mainlevbuild18" type="Sprite2D" parent="."]
+[node name="Mainlevbuild18" type="Sprite2D" parent="Mansión"]
 position = Vector2(1317, 2787)
 scale = Vector2(12.7868, 10.8826)
 texture = ExtResource("8_xkbce")
 
-[node name="Piso115" type="Sprite2D" parent="."]
+[node name="Piso115" type="Sprite2D" parent="Mansión"]
 position = Vector2(1721, 2779)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso115"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso115"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso116" type="Sprite2D" parent="."]
+[node name="Piso116" type="Sprite2D" parent="Mansión"]
 position = Vector2(1738, 3152)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso116"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso116"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso117" type="Sprite2D" parent="."]
+[node name="Piso117" type="Sprite2D" parent="Mansión"]
 position = Vector2(1331, 3152)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso117"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso117"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso118" type="Sprite2D" parent="."]
+[node name="Piso118" type="Sprite2D" parent="Mansión"]
 position = Vector2(1367.75, 3548)
 scale = Vector2(7.36154, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso118"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso118"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Mainlevbuild19" type="Sprite2D" parent="."]
+[node name="Mainlevbuild19" type="Sprite2D" parent="Mansión"]
 position = Vector2(2495, 3150)
 scale = Vector2(12.7868, 10.8826)
 texture = ExtResource("8_xkbce")
 
-[node name="Piso119" type="Sprite2D" parent="."]
+[node name="Piso119" type="Sprite2D" parent="Mansión"]
 position = Vector2(2121, 3129)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso119"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso119"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso120" type="Sprite2D" parent="."]
+[node name="Piso120" type="Sprite2D" parent="Mansión"]
 position = Vector2(2496, 3486)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso120"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso120"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso121" type="Sprite2D" parent="."]
+[node name="Piso121" type="Sprite2D" parent="Mansión"]
 position = Vector2(2472.5, 3926.59)
 scale = Vector2(13.2449, 11.6492)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso122" type="Sprite2D" parent="."]
+[node name="Piso122" type="Sprite2D" parent="Mansión"]
 position = Vector2(2496, 4218.38)
 scale = Vector2(6.48269, 5.90073)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso122"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso122"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso123" type="Sprite2D" parent="."]
+[node name="Piso123" type="Sprite2D" parent="Mansión"]
 position = Vector2(1707, 3593)
 scale = Vector2(12.9222, 11.6492)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso124" type="Sprite2D" parent="."]
+[node name="Piso124" type="Sprite2D" parent="Mansión"]
 position = Vector2(1748, 3898)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso124"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso124"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso125" type="Sprite2D" parent="."]
+[node name="Piso125" type="Sprite2D" parent="Mansión"]
 position = Vector2(2116, 4187)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso125"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso125"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso126" type="Sprite2D" parent="."]
+[node name="Piso126" type="Sprite2D" parent="Mansión"]
 position = Vector2(2080, 3870)
 scale = Vector2(12.9222, 11.6492)
 texture = ExtResource("7_ajcd4")
 
-[node name="Mainlevbuild20" type="Sprite2D" parent="."]
+[node name="Mainlevbuild20" type="Sprite2D" parent="Mansión"]
 position = Vector2(2110, 3512)
 scale = Vector2(12.7868, 10.8826)
 texture = ExtResource("8_xkbce")
 
-[node name="Mainlevbuild(10)" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(10)" type="Sprite2D" parent="Mansión"]
 position = Vector2(1102.5, 3235.75)
 scale = Vector2(6.69928, 9.95779)
 texture = ExtResource("16_8jivg")
 
-[node name="Mainlevbuild(12)" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(12)" type="Sprite2D" parent="Mansión"]
 position = Vector2(1166, 3621)
 scale = Vector2(12.3132, 8.79918)
 texture = ExtResource("17_0tfav")
 
-[node name="Mainlevbuild(4)" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(4)" type="Sprite2D" parent="Mansión"]
 position = Vector2(-956.156, 2435.88)
 scale = Vector2(4.69616, 4.77557)
 texture = ExtResource("18_k5n8y")
 
-[node name="Mainlevbuild(4)2" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(4)2" type="Sprite2D" parent="Mansión"]
 position = Vector2(-534, 2447)
 scale = Vector2(4.69616, 4.77557)
 texture = ExtResource("18_k5n8y")
 
-[node name="Mainlevbuild(4)3" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(4)3" type="Sprite2D" parent="Mansión"]
 position = Vector2(-108, 2447)
 scale = Vector2(4.69616, 4.77557)
 texture = ExtResource("18_k5n8y")
 
-[node name="Mainlevbuild(4)4" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(4)4" type="Sprite2D" parent="Mansión"]
 position = Vector2(-108, 2868)
 scale = Vector2(4.69616, 4.77557)
 texture = ExtResource("18_k5n8y")
 
-[node name="Mainlevbuild(4)5" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(4)5" type="Sprite2D" parent="Mansión"]
 position = Vector2(-108, 3281)
 scale = Vector2(4.69616, 4.77557)
 texture = ExtResource("18_k5n8y")
 
-[node name="Mainlevbuild(4)6" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(4)6" type="Sprite2D" parent="Mansión"]
 position = Vector2(-104, 3687)
 scale = Vector2(4.69616, 4.77557)
 texture = ExtResource("18_k5n8y")
 
-[node name="Mainlevbuild(4)7" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(4)7" type="Sprite2D" parent="Mansión"]
 position = Vector2(2347, 2470)
 scale = Vector2(4.69616, 4.77557)
 texture = ExtResource("18_k5n8y")
 
-[node name="Mainlevbuild(4)8" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(4)8" type="Sprite2D" parent="Mansión"]
 position = Vector2(2358, 3273)
 scale = Vector2(4.69616, 4.77557)
 texture = ExtResource("18_k5n8y")
 
-[node name="CandleB08" type="Sprite2D" parent="."]
+[node name="CandleB08" type="Sprite2D" parent="Mansión"]
 position = Vector2(565.563, 3233.5)
 scale = Vector2(7.60577, 8.6875)
 texture = ExtResource("12_vrqy2")
 
-[node name="CandleA07" type="Sprite2D" parent="."]
+[node name="CandleA07" type="Sprite2D" parent="Mansión"]
 position = Vector2(1661, 3261)
 scale = Vector2(9.07142, 8.71428)
 texture = ExtResource("15_51n8a")
 
-[node name="Decorative(3)" type="Sprite2D" parent="."]
+[node name="Decorative(3)" type="Sprite2D" parent="Mansión"]
 position = Vector2(892, 4047)
 scale = Vector2(6, 10.2727)
 texture = ExtResource("19_kmxyo")
 
-[node name="Decorative(1)" type="Sprite2D" parent="."]
+[node name="Decorative(1)" type="Sprite2D" parent="Mansión"]
 position = Vector2(607, 3833)
 scale = Vector2(13, 9.61275)
 texture = ExtResource("20_687m1")
 
-[node name="CandleA08" type="Sprite2D" parent="."]
+[node name="CandleA08" type="Sprite2D" parent="Mansión"]
 position = Vector2(525, 4053)
 scale = Vector2(9.07142, 8.71428)
 texture = ExtResource("15_51n8a")
 
-[node name="Mainlevbuild(12)2" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(12)2" type="Sprite2D" parent="Mansión"]
 visible = false
 position = Vector2(-902.938, 1478.06)
 scale = Vector2(7.69093, 10.7193)
 texture = ExtResource("17_0tfav")
 
-[node name="Mainlevbuild(11)" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(11)" type="Sprite2D" parent="Mansión"]
 position = Vector2(-459, 1686)
 scale = Vector2(7.16822, 9.28571)
 texture = ExtResource("21_7c46i")
 
-[node name="Mainlevbuild(17)" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(17)" type="Sprite2D" parent="Mansión"]
 position = Vector2(889, 1678)
 scale = Vector2(10.0667, 8.91667)
 texture = ExtResource("22_slbf7")
 
-[node name="Mainlevbuild(11)2" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(11)2" type="Sprite2D" parent="Mansión"]
 position = Vector2(2129, 1670)
 scale = Vector2(5.78505, 9.28571)
 texture = ExtResource("21_7c46i")
 
-[node name="Decorative(2)" type="Sprite2D" parent="."]
+[node name="Decorative(2)" type="Sprite2D" parent="Mansión"]
 position = Vector2(1370, 1691)
 scale = Vector2(11.0882, 7.17568)
 texture = ExtResource("23_ocqso")
 
-[node name="CandleA09" type="Sprite2D" parent="."]
+[node name="CandleA09" type="Sprite2D" parent="Mansión"]
 position = Vector2(1381, 1696)
 scale = Vector2(9.07142, 8.71428)
 texture = ExtResource("15_51n8a")
 
-[node name="Decorative2" type="Sprite2D" parent="."]
+[node name="Decorative2" type="Sprite2D" parent="Mansión"]
 position = Vector2(2955, 6638)
 scale = Vector2(16.6497, 9.50002)
 texture = ExtResource("5_mcgor")
 
-[node name="Mainlevbuild(18)" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(18)" type="Sprite2D" parent="Mansión"]
 position = Vector2(2167, 6695)
-rotation = 6.28319
 scale = Vector2(8.44827, 8.40942)
 texture = ExtResource("24_xd0k7")
 
-[node name="Mainlevbuild(13)" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(13)" type="Sprite2D" parent="Mansión"]
 position = Vector2(663, 4819)
 scale = Vector2(12.466, 10.1111)
 texture = ExtResource("25_fbog5")
 
-[node name="Mainlevbuild(13)2" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(13)2" type="Sprite2D" parent="Mansión"]
 position = Vector2(1111, 5179)
 rotation = 1.5708
 scale = Vector2(12.6651, 10.1111)
 texture = ExtResource("25_fbog5")
 
-[node name="Mainlevbuild(13)3" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(13)3" type="Sprite2D" parent="Mansión"]
 position = Vector2(1111, 5979)
 rotation = 1.5708
 scale = Vector2(12.6651, 10.1111)
 texture = ExtResource("25_fbog5")
 
-[node name="Mainlevbuild(13)4" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(13)4" type="Sprite2D" parent="Mansión"]
 position = Vector2(2.93748, 4819)
 scale = Vector2(12.1713, 10.1111)
 texture = ExtResource("25_fbog5")
 
-[node name="Mainlevbuild(13)5" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(13)5" type="Sprite2D" parent="Mansión"]
 position = Vector2(-497, 4491)
 rotation = 1.5708
 scale = Vector2(12.6651, 10.1111)
 texture = ExtResource("25_fbog5")
 
-[node name="Mainlevbuild(13)6" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(13)6" type="Sprite2D" parent="Mansión"]
 position = Vector2(-497, 3819)
 rotation = 1.5708
 scale = Vector2(12.6651, 10.1111)
 texture = ExtResource("25_fbog5")
 
-[node name="Mainlevbuild(13)7" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(13)7" type="Sprite2D" parent="Mansión"]
 position = Vector2(-497, 3411)
 rotation = 1.5708
 scale = Vector2(12.6651, 10.1111)
 texture = ExtResource("25_fbog5")
 
-[node name="Mainlevbuild(13)8" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(13)8" type="Sprite2D" parent="Mansión"]
 position = Vector2(-937, 3075)
 scale = Vector2(12.466, 10.1111)
 texture = ExtResource("25_fbog5")
 
-[node name="Mainlevbuild(13)9" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(13)9" type="Sprite2D" parent="Mansión"]
 position = Vector2(-1281, 2548)
 rotation = 1.5708
 scale = Vector2(14.5417, 10.1111)
 texture = ExtResource("25_fbog5")
 
-[node name="Mainlevbuild(13)10" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(13)10" type="Sprite2D" parent="Mansión"]
 position = Vector2(1105, 6835)
 rotation = 1.5708
 scale = Vector2(14.2454, 10.1111)
 texture = ExtResource("25_fbog5")
 
-[node name="Mainlevbuild(13)11" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(13)11" type="Sprite2D" parent="Mansión"]
 position = Vector2(1455, 7347)
 scale = Vector2(12.466, 10.1111)
 texture = ExtResource("25_fbog5")
 
-[node name="Mainlevbuild(13)12" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(13)12" type="Sprite2D" parent="Mansión"]
 position = Vector2(2255, 7347)
 scale = Vector2(12.466, 10.1111)
 texture = ExtResource("25_fbog5")
 
-[node name="Mainlevbuild(13)13" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(13)13" type="Sprite2D" parent="Mansión"]
 position = Vector2(3047, 7339)
 scale = Vector2(12.466, 10.1111)
 texture = ExtResource("25_fbog5")
 
-[node name="Mainlevbuild(13)14" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(13)14" type="Sprite2D" parent="Mansión"]
 position = Vector2(3831, 7331)
 scale = Vector2(12.466, 10.1111)
 texture = ExtResource("25_fbog5")
 
-[node name="Mainlevbuild(13)15" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(13)15" type="Sprite2D" parent="Mansión"]
 position = Vector2(4247, 7331)
 scale = Vector2(12.466, 10.1111)
 texture = ExtResource("25_fbog5")
 
-[node name="Piso127" type="Sprite2D" parent="."]
+[node name="Piso127" type="Sprite2D" parent="Mansión"]
 position = Vector2(3956.09, 4264)
 scale = Vector2(13.8406, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso128" type="Sprite2D" parent="."]
+[node name="Piso128" type="Sprite2D" parent="Mansión"]
 position = Vector2(3214, 3884)
 scale = Vector2(12.4566, 15.3061)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso128"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso128"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso129" type="Sprite2D" parent="."]
+[node name="Piso129" type="Sprite2D" parent="Mansión"]
 position = Vector2(3990, 3860.09)
 scale = Vector2(12.4566, 14.3227)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso129"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso129"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso130" type="Sprite2D" parent="."]
+[node name="Piso130" type="Sprite2D" parent="Mansión"]
 position = Vector2(3638, 3818.87)
 scale = Vector2(6.48269, 7.59191)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso130"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso130"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso131" type="Sprite2D" parent="."]
+[node name="Piso131" type="Sprite2D" parent="Mansión"]
 position = Vector2(2878, 3811)
 scale = Vector2(6.48269, 7.59191)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso131"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso131"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Mainlevbuild(16)" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(16)" type="Sprite2D" parent="Mansión"]
 position = Vector2(3660, 3054)
 scale = Vector2(9.82243, 15.9744)
 texture = ExtResource("26_8l040")
 
-[node name="Mainlevbuild(13)16" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(13)16" type="Sprite2D" parent="Mansión"]
 position = Vector2(2799, 2224)
 rotation = -1.5708
 scale = Vector2(7.33024, 10.1111)
 texture = ExtResource("25_fbog5")
 
-[node name="Decorative(2)2" type="Sprite2D" parent="."]
+[node name="Decorative(2)2" type="Sprite2D" parent="Mansión"]
 position = Vector2(3650, 3027)
 scale = Vector2(11.0882, 7.17568)
 texture = ExtResource("23_ocqso")
 
-[node name="Decorative(1)2" type="Sprite2D" parent="."]
+[node name="Decorative(1)2" type="Sprite2D" parent="Mansión"]
 position = Vector2(3887, 3441)
 scale = Vector2(13, 9.61275)
 texture = ExtResource("20_687m1")
 
-[node name="Mainlevbuild(18)2" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(18)2" type="Sprite2D" parent="Mansión"]
 position = Vector2(3679, 6615)
 rotation = 3.14159
 scale = Vector2(8.44827, 8.40942)
 texture = ExtResource("24_xd0k7")
 
-[node name="Decorative(1)3" type="Sprite2D" parent="."]
+[node name="Decorative(1)3" type="Sprite2D" parent="Mansión"]
 position = Vector2(2543, 6361)
 scale = Vector2(13, 9.61275)
 texture = ExtResource("20_687m1")
 
-[node name="Decorative(1)4" type="Sprite2D" parent="."]
+[node name="Decorative(1)4" type="Sprite2D" parent="Mansión"]
 position = Vector2(3415, 6369)
 scale = Vector2(13, 9.61275)
 texture = ExtResource("20_687m1")
 
-[node name="CandleB09" type="Sprite2D" parent="."]
+[node name="CandleB09" type="Sprite2D" parent="Mansión"]
 position = Vector2(2613, 6805)
 scale = Vector2(5.82692, 5.87498)
 texture = ExtResource("12_vrqy2")
 
-[node name="CandleB10" type="Sprite2D" parent="."]
+[node name="CandleB10" type="Sprite2D" parent="Mansión"]
 position = Vector2(3288, 6813)
 scale = Vector2(5.82692, 5.87498)
 texture = ExtResource("12_vrqy2")
 
-[node name="Piso132" type="Sprite2D" parent="."]
+[node name="Piso132" type="Sprite2D" parent="Mansión"]
 position = Vector2(4848, 3404)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso44" type="Sprite2D" parent="Piso132"]
+[node name="Piso44" type="Sprite2D" parent="Mansión/Piso132"]
 visible = false
 position = Vector2(4408, 4323.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso132" type="Sprite2D" parent="Piso132"]
+[node name="Piso132" type="Sprite2D" parent="Mansión/Piso132"]
 visible = false
 position = Vector2(4848, 3404)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso44" type="Sprite2D" parent="Piso132/Piso132"]
+[node name="Piso44" type="Sprite2D" parent="Mansión/Piso132/Piso132"]
 visible = false
 position = Vector2(4408, 4323.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso133" type="Sprite2D" parent="."]
+[node name="Piso133" type="Sprite2D" parent="Mansión"]
 position = Vector2(4848, 3084)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso44" type="Sprite2D" parent="Piso133"]
+[node name="Piso44" type="Sprite2D" parent="Mansión/Piso133"]
 visible = false
 position = Vector2(4408, 4323.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso132" type="Sprite2D" parent="Piso133"]
+[node name="Piso132" type="Sprite2D" parent="Mansión/Piso133"]
 visible = false
 position = Vector2(4848, 3404)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso44" type="Sprite2D" parent="Piso133/Piso132"]
+[node name="Piso44" type="Sprite2D" parent="Mansión/Piso133/Piso132"]
 visible = false
 position = Vector2(4408, 4323.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso134" type="Sprite2D" parent="."]
+[node name="Piso134" type="Sprite2D" parent="Mansión"]
 position = Vector2(5222, 3388)
 scale = Vector2(12.4566, 15.3061)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso134"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso134"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso135" type="Sprite2D" parent="."]
+[node name="Piso135" type="Sprite2D" parent="Mansión"]
 position = Vector2(5596, 3363)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso135"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso135"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso136" type="Sprite2D" parent="."]
+[node name="Piso136" type="Sprite2D" parent="Mansión"]
 position = Vector2(6766, 3412)
 scale = Vector2(12.4566, 15.3061)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso136"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso136"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso137" type="Sprite2D" parent="."]
+[node name="Piso137" type="Sprite2D" parent="Mansión"]
 position = Vector2(6009, 3367)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso137"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso137"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso138" type="Sprite2D" parent="."]
+[node name="Piso138" type="Sprite2D" parent="Mansión"]
 position = Vector2(6386, 3380)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso138"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso138"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso139" type="Sprite2D" parent="."]
+[node name="Piso139" type="Sprite2D" parent="Mansión"]
 position = Vector2(7160, 3412)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso44" type="Sprite2D" parent="Piso139"]
+[node name="Piso44" type="Sprite2D" parent="Mansión/Piso139"]
 visible = false
 position = Vector2(4408, 4323.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso132" type="Sprite2D" parent="Piso139"]
+[node name="Piso132" type="Sprite2D" parent="Mansión/Piso139"]
 visible = false
 position = Vector2(4848, 3404)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso44" type="Sprite2D" parent="Piso139/Piso132"]
+[node name="Piso44" type="Sprite2D" parent="Mansión/Piso139/Piso132"]
 visible = false
 position = Vector2(4408, 4323.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso140" type="Sprite2D" parent="."]
+[node name="Piso140" type="Sprite2D" parent="Mansión"]
 position = Vector2(7496, 3428)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso44" type="Sprite2D" parent="Piso140"]
+[node name="Piso44" type="Sprite2D" parent="Mansión/Piso140"]
 visible = false
 position = Vector2(4408, 4323.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso132" type="Sprite2D" parent="Piso140"]
+[node name="Piso132" type="Sprite2D" parent="Mansión/Piso140"]
 visible = false
 position = Vector2(4848, 3404)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso44" type="Sprite2D" parent="Piso140/Piso132"]
+[node name="Piso44" type="Sprite2D" parent="Mansión/Piso140/Piso132"]
 visible = false
 position = Vector2(4408, 4323.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso141" type="Sprite2D" parent="."]
+[node name="Piso141" type="Sprite2D" parent="Mansión"]
 position = Vector2(7838, 3404)
 scale = Vector2(12.4566, 15.3061)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso141"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso141"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso142" type="Sprite2D" parent="."]
+[node name="Piso142" type="Sprite2D" parent="Mansión"]
 position = Vector2(7860, 2300)
 scale = Vector2(12.4566, 15.3061)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso142"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso142"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso143" type="Sprite2D" parent="."]
+[node name="Piso143" type="Sprite2D" parent="Mansión"]
 position = Vector2(5236, 2926)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso143"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso143"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso144" type="Sprite2D" parent="."]
+[node name="Piso144" type="Sprite2D" parent="Mansión"]
 position = Vector2(4836, 2206)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso144"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso144"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso145" type="Sprite2D" parent="."]
+[node name="Piso145" type="Sprite2D" parent="Mansión"]
 position = Vector2(5206, 2636)
 scale = Vector2(12.4566, 11.3878)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso145"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso145"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso146" type="Sprite2D" parent="."]
+[node name="Piso146" type="Sprite2D" parent="Mansión"]
 position = Vector2(7510, 2676)
 scale = Vector2(12.4566, 15.3061)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso146"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso146"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso147" type="Sprite2D" parent="."]
+[node name="Piso147" type="Sprite2D" parent="Mansión"]
 position = Vector2(5236, 2223.88)
 scale = Vector2(6.48269, 7.00367)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso147"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso147"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso148" type="Sprite2D" parent="."]
+[node name="Piso148" type="Sprite2D" parent="Mansión"]
 position = Vector2(5628, 2584)
 scale = Vector2(6.48269, 7.00367)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso148"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso148"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso149" type="Sprite2D" parent="."]
+[node name="Piso149" type="Sprite2D" parent="Mansión"]
 position = Vector2(5614, 2228)
 scale = Vector2(12.4566, 11.3878)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso149"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso149"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso150" type="Sprite2D" parent="."]
+[node name="Piso150" type="Sprite2D" parent="Mansión"]
 position = Vector2(5974, 3020)
 scale = Vector2(12.4566, 11.3878)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso150"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso150"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso151" type="Sprite2D" parent="."]
+[node name="Piso151" type="Sprite2D" parent="Mansión"]
 position = Vector2(6002, 2212)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso151"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso151"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso152" type="Sprite2D" parent="."]
+[node name="Piso152" type="Sprite2D" parent="Mansión"]
 position = Vector2(6010, 2580)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso152"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso152"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso153" type="Sprite2D" parent="."]
+[node name="Piso153" type="Sprite2D" parent="Mansión"]
 position = Vector2(6382, 2300)
 scale = Vector2(12.4566, 15.3061)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso153"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso153"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso154" type="Sprite2D" parent="."]
+[node name="Piso154" type="Sprite2D" parent="Mansión"]
 position = Vector2(6374, 2740)
 scale = Vector2(12.4566, 15.3061)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso154"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso154"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso155" type="Sprite2D" parent="."]
+[node name="Piso155" type="Sprite2D" parent="Mansión"]
 position = Vector2(6386, 3036)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso155"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso155"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso156" type="Sprite2D" parent="."]
+[node name="Piso156" type="Sprite2D" parent="Mansión"]
 position = Vector2(6778, 2964)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso156"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso156"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso157" type="Sprite2D" parent="."]
+[node name="Piso157" type="Sprite2D" parent="Mansión"]
 position = Vector2(6800.66, 2212)
 scale = Vector2(7.17981, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso157"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso157"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso158" type="Sprite2D" parent="."]
+[node name="Piso158" type="Sprite2D" parent="Mansión"]
 position = Vector2(6758, 2684)
 scale = Vector2(12.4566, 15.3061)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso158"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso158"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso159" type="Sprite2D" parent="."]
+[node name="Piso159" type="Sprite2D" parent="Mansión"]
 position = Vector2(7158, 2300)
 scale = Vector2(12.4566, 15.3061)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso159"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso159"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso160" type="Sprite2D" parent="."]
+[node name="Piso160" type="Sprite2D" parent="Mansión"]
 position = Vector2(7168, 2636)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso44" type="Sprite2D" parent="Piso160"]
+[node name="Piso44" type="Sprite2D" parent="Mansión/Piso160"]
 visible = false
 position = Vector2(4408, 4323.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso132" type="Sprite2D" parent="Piso160"]
+[node name="Piso132" type="Sprite2D" parent="Mansión/Piso160"]
 visible = false
 position = Vector2(4848, 3404)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso44" type="Sprite2D" parent="Piso160/Piso132"]
+[node name="Piso44" type="Sprite2D" parent="Mansión/Piso160/Piso132"]
 visible = false
 position = Vector2(4408, 4323.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso161" type="Sprite2D" parent="."]
+[node name="Piso161" type="Sprite2D" parent="Mansión"]
 position = Vector2(7134, 3076)
 scale = Vector2(12.4566, 15.3061)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso161"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso161"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso162" type="Sprite2D" parent="."]
+[node name="Piso162" type="Sprite2D" parent="Mansión"]
 position = Vector2(7546, 2212)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso162"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso162"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Mainlevbuild21" type="Sprite2D" parent="."]
+[node name="Mainlevbuild21" type="Sprite2D" parent="Mansión"]
 position = Vector2(5622, 3006.19)
 scale = Vector2(12.7868, 11.8699)
 texture = ExtResource("8_xkbce")
 
-[node name="Mainlevbuild22" type="Sprite2D" parent="."]
+[node name="Mainlevbuild22" type="Sprite2D" parent="Mansión"]
 position = Vector2(4838, 2702.09)
 scale = Vector2(12.7868, 15.7921)
 texture = ExtResource("8_xkbce")
 
-[node name="Piso163" type="Sprite2D" parent="."]
+[node name="Piso163" type="Sprite2D" parent="Mansión"]
 position = Vector2(7876, 2672)
 scale = Vector2(6.22692, 6.32353)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso44" type="Sprite2D" parent="Piso163"]
+[node name="Piso44" type="Sprite2D" parent="Mansión/Piso163"]
 visible = false
 position = Vector2(4408, 4323.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso132" type="Sprite2D" parent="Piso163"]
+[node name="Piso132" type="Sprite2D" parent="Mansión/Piso163"]
 visible = false
 position = Vector2(4848, 3404)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso44" type="Sprite2D" parent="Piso163/Piso132"]
+[node name="Piso44" type="Sprite2D" parent="Mansión/Piso163/Piso132"]
 visible = false
 position = Vector2(4408, 4323.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso164" type="Sprite2D" parent="."]
+[node name="Piso164" type="Sprite2D" parent="Mansión"]
 position = Vector2(7512, 3024)
 scale = Vector2(6.22692, 8.20588)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso44" type="Sprite2D" parent="Piso164"]
+[node name="Piso44" type="Sprite2D" parent="Mansión/Piso164"]
 visible = false
 position = Vector2(4408, 4323.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso132" type="Sprite2D" parent="Piso164"]
+[node name="Piso132" type="Sprite2D" parent="Mansión/Piso164"]
 visible = false
 position = Vector2(4848, 3404)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso44" type="Sprite2D" parent="Piso164/Piso132"]
+[node name="Piso44" type="Sprite2D" parent="Mansión/Piso164/Piso132"]
 visible = false
 position = Vector2(4408, 4323.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso165" type="Sprite2D" parent="."]
+[node name="Piso165" type="Sprite2D" parent="Mansión"]
 position = Vector2(7872, 2928)
 scale = Vector2(6.22692, 6.32353)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso44" type="Sprite2D" parent="Piso165"]
+[node name="Piso44" type="Sprite2D" parent="Mansión/Piso165"]
 visible = false
 position = Vector2(4408, 4323.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso132" type="Sprite2D" parent="Piso165"]
+[node name="Piso132" type="Sprite2D" parent="Mansión/Piso165"]
 visible = false
 position = Vector2(4848, 3404)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso44" type="Sprite2D" parent="Piso165/Piso132"]
+[node name="Piso44" type="Sprite2D" parent="Mansión/Piso165/Piso132"]
 visible = false
 position = Vector2(4408, 4323.81)
 scale = Vector2(6.22692, 5.5)
 texture = ExtResource("6_dslpa")
 
-[node name="Mainlevbuild(13)17" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(13)17" type="Sprite2D" parent="Mansión"]
 position = Vector2(4551, 2096)
 rotation = 1.5708
 scale = Vector2(10.8858, 10.1111)
 texture = ExtResource("25_fbog5")
 
-[node name="Piso166" type="Sprite2D" parent="."]
+[node name="Piso166" type="Sprite2D" parent="Mansión"]
 position = Vector2(4835.69, 1782.25)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso166"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso166"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso167" type="Sprite2D" parent="."]
+[node name="Piso167" type="Sprite2D" parent="Mansión"]
 position = Vector2(5235.69, 1800.12)
 scale = Vector2(6.48269, 7.00367)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso167"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso167"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso168" type="Sprite2D" parent="."]
+[node name="Piso168" type="Sprite2D" parent="Mansión"]
 position = Vector2(6001.69, 1788.25)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso168"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso168"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso169" type="Sprite2D" parent="."]
+[node name="Piso169" type="Sprite2D" parent="Mansión"]
 position = Vector2(6777.69, 1788.25)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso169"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso169"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso170" type="Sprite2D" parent="."]
+[node name="Piso170" type="Sprite2D" parent="Mansión"]
 position = Vector2(7545.69, 1788.25)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso170"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso170"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso171" type="Sprite2D" parent="."]
+[node name="Piso171" type="Sprite2D" parent="Mansión"]
 position = Vector2(5251.69, 1382.25)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso171"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso171"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso172" type="Sprite2D" parent="."]
+[node name="Piso172" type="Sprite2D" parent="Mansión"]
 position = Vector2(5651.69, 1400.12)
 scale = Vector2(6.48269, 7.00367)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso172"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso172"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso173" type="Sprite2D" parent="."]
+[node name="Piso173" type="Sprite2D" parent="Mansión"]
 position = Vector2(6417.69, 1388.25)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso173"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso173"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso174" type="Sprite2D" parent="."]
+[node name="Piso174" type="Sprite2D" parent="Mansión"]
 position = Vector2(7193.69, 1388.25)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso174"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso174"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso175" type="Sprite2D" parent="."]
+[node name="Piso175" type="Sprite2D" parent="Mansión"]
 position = Vector2(7882, 1401)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso175"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso175"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso176" type="Sprite2D" parent="."]
+[node name="Piso176" type="Sprite2D" parent="Mansión"]
 position = Vector2(4823, 1421)
 scale = Vector2(13.7551, 12.6939)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso176"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso176"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso177" type="Sprite2D" parent="."]
+[node name="Piso177" type="Sprite2D" parent="Mansión"]
 position = Vector2(5607, 1857)
 scale = Vector2(13.7551, 13.8367)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso177"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso177"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso178" type="Sprite2D" parent="."]
+[node name="Piso178" type="Sprite2D" parent="Mansión"]
 position = Vector2(6015, 1449)
 scale = Vector2(13.7551, 13.8367)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso178"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso178"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso179" type="Sprite2D" parent="."]
+[node name="Piso179" type="Sprite2D" parent="Mansión"]
 position = Vector2(6367, 1849)
 scale = Vector2(13.7551, 13.8367)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso179"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso179"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso180" type="Sprite2D" parent="."]
+[node name="Piso180" type="Sprite2D" parent="Mansión"]
 position = Vector2(6775, 1457)
 scale = Vector2(13.7551, 13.8367)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso180"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso180"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso181" type="Sprite2D" parent="."]
+[node name="Piso181" type="Sprite2D" parent="Mansión"]
 position = Vector2(7119, 1873)
 scale = Vector2(13.7551, 13.8367)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso181"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso181"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso182" type="Sprite2D" parent="."]
+[node name="Piso182" type="Sprite2D" parent="Mansión"]
 position = Vector2(7503, 1457)
 scale = Vector2(13.7551, 13.8367)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso182"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso182"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso183" type="Sprite2D" parent="."]
+[node name="Piso183" type="Sprite2D" parent="Mansión"]
 position = Vector2(7839, 1857)
 scale = Vector2(13.7551, 13.8367)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso183"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso183"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Mainlevbuild(13)18" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(13)18" type="Sprite2D" parent="Mansión"]
 position = Vector2(4551, 1536)
 rotation = 1.5708
 scale = Vector2(10.8858, 10.1111)
 texture = ExtResource("25_fbog5")
 
-[node name="Mainlevbuild(17)2" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(17)2" type="Sprite2D" parent="Mansión"]
 position = Vector2(5270, 3009)
 scale = Vector2(10.3333, 14.5833)
 texture = ExtResource("22_slbf7")
 
-[node name="Mainlevbuild(17)3" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(17)3" type="Sprite2D" parent="Mansión"]
 position = Vector2(7404, 3025)
 scale = Vector2(10.3333, 14.5833)
 texture = ExtResource("22_slbf7")
 
-[node name="Mainlevbuild(14)" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(14)" type="Sprite2D" parent="Mansión"]
 position = Vector2(6334.13, 2905)
 scale = Vector2(10.1389, 15)
 texture = ExtResource("27_ync8a")
 
-[node name="Piso184" type="Sprite2D" parent="."]
+[node name="Piso184" type="Sprite2D" parent="Mansión"]
 position = Vector2(4824.69, 979.125)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso184"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso184"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso185" type="Sprite2D" parent="."]
+[node name="Piso185" type="Sprite2D" parent="Mansión"]
 position = Vector2(5224.69, 997)
 scale = Vector2(6.48269, 7.00367)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso185"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso185"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso186" type="Sprite2D" parent="."]
+[node name="Piso186" type="Sprite2D" parent="Mansión"]
 position = Vector2(5990.69, 985.125)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso186"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso186"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso187" type="Sprite2D" parent="."]
+[node name="Piso187" type="Sprite2D" parent="Mansión"]
 position = Vector2(6766.69, 985.125)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso187"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso187"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso188" type="Sprite2D" parent="."]
+[node name="Piso188" type="Sprite2D" parent="Mansión"]
 position = Vector2(7534.69, 985.125)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso188"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso188"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso189" type="Sprite2D" parent="."]
+[node name="Piso189" type="Sprite2D" parent="Mansión"]
 position = Vector2(5240.69, 579.125)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso189"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso189"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso190" type="Sprite2D" parent="."]
+[node name="Piso190" type="Sprite2D" parent="Mansión"]
 position = Vector2(5640.69, 597)
 scale = Vector2(6.48269, 7.00367)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso190"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso190"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso191" type="Sprite2D" parent="."]
+[node name="Piso191" type="Sprite2D" parent="Mansión"]
 position = Vector2(6406.69, 585.125)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso191"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso191"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso192" type="Sprite2D" parent="."]
+[node name="Piso192" type="Sprite2D" parent="Mansión"]
 position = Vector2(7182.69, 585.125)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso192"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso192"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso193" type="Sprite2D" parent="."]
+[node name="Piso193" type="Sprite2D" parent="Mansión"]
 position = Vector2(7871, 597.875)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso78" type="Sprite2D" parent="Piso193"]
+[node name="Piso78" type="Sprite2D" parent="Mansión/Piso193"]
 visible = false
 position = Vector2(2134, 4612)
 scale = Vector2(6.48269, 6.65441)
 texture = ExtResource("6_dslpa")
 
-[node name="Piso194" type="Sprite2D" parent="."]
+[node name="Piso194" type="Sprite2D" parent="Mansión"]
 position = Vector2(4812, 617.875)
 scale = Vector2(13.7551, 12.6939)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso194"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso194"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso195" type="Sprite2D" parent="."]
+[node name="Piso195" type="Sprite2D" parent="Mansión"]
 position = Vector2(5596, 1053.87)
 scale = Vector2(13.7551, 13.8367)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso195"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso195"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso196" type="Sprite2D" parent="."]
+[node name="Piso196" type="Sprite2D" parent="Mansión"]
 position = Vector2(6004, 645.875)
 scale = Vector2(13.7551, 13.8367)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso196"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso196"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso197" type="Sprite2D" parent="."]
+[node name="Piso197" type="Sprite2D" parent="Mansión"]
 position = Vector2(6356, 1045.87)
 scale = Vector2(13.7551, 13.8367)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso197"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso197"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso198" type="Sprite2D" parent="."]
+[node name="Piso198" type="Sprite2D" parent="Mansión"]
 position = Vector2(6764, 653.875)
 scale = Vector2(13.7551, 13.8367)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso198"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso198"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso199" type="Sprite2D" parent="."]
+[node name="Piso199" type="Sprite2D" parent="Mansión"]
 position = Vector2(7108, 1069.87)
 scale = Vector2(13.7551, 13.8367)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso199"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso199"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso200" type="Sprite2D" parent="."]
+[node name="Piso200" type="Sprite2D" parent="Mansión"]
 position = Vector2(7492, 653.875)
 scale = Vector2(13.7551, 13.8367)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso200"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso200"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso201" type="Sprite2D" parent="."]
+[node name="Piso201" type="Sprite2D" parent="Mansión"]
 position = Vector2(7828, 1053.87)
 scale = Vector2(13.7551, 13.8367)
 texture = ExtResource("7_ajcd4")
 
-[node name="Piso127" type="Sprite2D" parent="Piso201"]
+[node name="Piso127" type="Sprite2D" parent="Mansión/Piso201"]
 visible = false
 position = Vector2(3990, 4264)
 scale = Vector2(12.4566, 11.5434)
 texture = ExtResource("7_ajcd4")
 
-[node name="Mainlevbuild(13)19" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(13)19" type="Sprite2D" parent="Mansión"]
 position = Vector2(4540, 829.042)
 rotation = 1.5708
 scale = Vector2(13.2603, 10.1111)
 texture = ExtResource("25_fbog5")
 
-[node name="Mainlevbuild(9)" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(9)" type="Sprite2D" parent="Mansión"]
 position = Vector2(5996, 735)
 scale = Vector2(12.5682, 10.1346)
 texture = ExtResource("28_42ghu")
 
-[node name="Mainlevbuild(9)2" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(9)2" type="Sprite2D" parent="Mansión"]
 position = Vector2(6666, 740)
 scale = Vector2(12.5682, 10.1346)
 texture = ExtResource("28_42ghu")
 
-[node name="Mainlevbuild(9)3" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(9)3" type="Sprite2D" parent="Mansión"]
 position = Vector2(6005, 1128)
 scale = Vector2(12.5682, 10.1346)
 texture = ExtResource("28_42ghu")
 
-[node name="Mainlevbuild(9)4" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(9)4" type="Sprite2D" parent="Mansión"]
 position = Vector2(6666, 1139)
 scale = Vector2(12.5682, 10.1346)
 texture = ExtResource("28_42ghu")
 
-[node name="Mainlevbuild(9)5" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(9)5" type="Sprite2D" parent="Mansión"]
 position = Vector2(6005, 1510)
 scale = Vector2(12.5682, 10.1346)
 texture = ExtResource("28_42ghu")
 
-[node name="Mainlevbuild(9)6" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(9)6" type="Sprite2D" parent="Mansión"]
 position = Vector2(6666, 1517)
 scale = Vector2(12.5682, 10.1346)
 texture = ExtResource("28_42ghu")
 
-[node name="Mainlevbuild(9)7" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(9)7" type="Sprite2D" parent="Mansión"]
 position = Vector2(6005, 1949)
 scale = Vector2(12.5682, 10.1346)
 texture = ExtResource("28_42ghu")
 
-[node name="Mainlevbuild(9)8" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(9)8" type="Sprite2D" parent="Mansión"]
 position = Vector2(6675, 1956)
 scale = Vector2(12.5682, 10.1346)
 texture = ExtResource("28_42ghu")
 
-[node name="Mainlevbuild(11)3" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(11)3" type="Sprite2D" parent="Mansión"]
 position = Vector2(5073, 70.0001)
 scale = Vector2(5.78505, 9.28571)
 texture = ExtResource("21_7c46i")
 
-[node name="Mainlevbuild(11)4" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(11)4" type="Sprite2D" parent="Mansión"]
 position = Vector2(7481, 94)
 scale = Vector2(5.78505, 9.28571)
 texture = ExtResource("21_7c46i")
 
-[node name="Mainlevbuild(16)2" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(16)2" type="Sprite2D" parent="Mansión"]
 position = Vector2(6280, 102)
 scale = Vector2(6.27103, 9.41026)
 texture = ExtResource("26_8l040")
 
-[node name="Mainlevbuild(19)" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(19)" type="Sprite2D" parent="Mansión"]
 position = Vector2(4358, 4507)
 scale = Vector2(12.7549, 10.9815)
 texture = ExtResource("29_laleb")
 
-[node name="Mainlevbuild(19)2" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(19)2" type="Sprite2D" parent="Mansión"]
 position = Vector2(4374, 6243)
 scale = Vector2(12.7549, 10.9815)
 texture = ExtResource("29_laleb")
 
-[node name="Mainlevbuild(15)5" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(15)5" type="Sprite2D" parent="Mansión"]
 position = Vector2(5157, 2047)
 scale = Vector2(13.2969, 6.07217)
 texture = ExtResource("14_3ex3a")
 
-[node name="Decorative4" type="Sprite2D" parent="."]
+[node name="Decorative4" type="Sprite2D" parent="Mansión"]
 position = Vector2(5167, 1626)
 scale = Vector2(13.4855, 8.25001)
 texture = ExtResource("5_mcgor")
 
-[node name="Decorative5" type="Sprite2D" parent="."]
+[node name="Decorative5" type="Sprite2D" parent="Mansión"]
 position = Vector2(5159, 682)
 scale = Vector2(13.4855, 8.25001)
 texture = ExtResource("5_mcgor")
 
-[node name="Mainlevbuild(15)6" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(15)6" type="Sprite2D" parent="Mansión"]
 position = Vector2(5157, 1127)
 scale = Vector2(13.2969, 6.07217)
 texture = ExtResource("14_3ex3a")
 
-[node name="Torch1" type="Sprite2D" parent="."]
+[node name="Torch1" type="Sprite2D" parent="Mansión"]
 position = Vector2(5067, 72)
 scale = Vector2(9, 10.5)
 texture = ExtResource("30_tmlrb")
 
-[node name="Torch2" type="Sprite2D" parent="."]
+[node name="Torch2" type="Sprite2D" parent="Mansión"]
 position = Vector2(6271, 64)
 scale = Vector2(9, 10.5)
 texture = ExtResource("30_tmlrb")
 
-[node name="Torch3" type="Sprite2D" parent="."]
+[node name="Torch3" type="Sprite2D" parent="Mansión"]
 position = Vector2(7490, 70)
 scale = Vector2(9, 10.5)
 texture = ExtResource("30_tmlrb")
 
-[node name="Decorative(1)5" type="Sprite2D" parent="."]
+[node name="Decorative(1)5" type="Sprite2D" parent="Mansión"]
 position = Vector2(7103, 1025)
 scale = Vector2(13, 9.61275)
 texture = ExtResource("20_687m1")
 
-[node name="Decorative(2)3" type="Sprite2D" parent="."]
+[node name="Decorative(2)3" type="Sprite2D" parent="Mansión"]
 position = Vector2(5770, 3019)
 scale = Vector2(11.0882, 7.17568)
 texture = ExtResource("23_ocqso")
 
-[node name="Decorative(2)4" type="Sprite2D" parent="."]
+[node name="Decorative(2)4" type="Sprite2D" parent="Mansión"]
 position = Vector2(7915, 3020)
 scale = Vector2(11.0882, 7.17568)
 texture = ExtResource("23_ocqso")
 
-[node name="Torch4" type="Sprite2D" parent="."]
+[node name="Torch4" type="Sprite2D" parent="Mansión"]
 position = Vector2(6015, 2872)
 scale = Vector2(9, 10.5)
 texture = ExtResource("30_tmlrb")
 
-[node name="Torch5" type="Sprite2D" parent="."]
+[node name="Torch5" type="Sprite2D" parent="Mansión"]
 position = Vector2(6671, 2853)
 scale = Vector2(9, 10.5)
 texture = ExtResource("30_tmlrb")
 
-[node name="Spike4" type="Sprite2D" parent="."]
+[node name="Spike4" type="Sprite2D" parent="Mansión"]
 position = Vector2(2588, 3676)
 scale = Vector2(18.3269, 15.25)
 texture = ExtResource("31_c04sw")
 
-[node name="Decorative(4)" type="Sprite2D" parent="."]
+[node name="Decorative(4)" type="Sprite2D" parent="Mansión"]
 position = Vector2(1409.06, 5036.4)
-rotation = 6.28319
 scale = Vector2(15.0045, 13.4961)
 texture = ExtResource("32_n8sjk")
 
-[node name="Decorative(1)6" type="Sprite2D" parent="."]
+[node name="Decorative(1)6" type="Sprite2D" parent="Mansión"]
 position = Vector2(7406, 4719)
 scale = Vector2(13, 9.61275)
 texture = ExtResource("20_687m1")
 
-[node name="Mainlevbuild(18)3" type="Sprite2D" parent="."]
+[node name="Mainlevbuild(18)3" type="Sprite2D" parent="Mansión"]
 position = Vector2(6304, 7125)
 rotation = 1.5708
 scale = Vector2(8.44827, 8.40942)
 texture = ExtResource("24_xd0k7")
 
-[node name="Decorative6" type="Sprite2D" parent="."]
+[node name="Decorative6" type="Sprite2D" parent="Mansión"]
 position = Vector2(5201, 5834)
 scale = Vector2(13.4855, 8.25001)
 texture = ExtResource("5_mcgor")
+
+[node name="Character_main" parent="." instance=ExtResource("1_yjgeo")]
+position = Vector2(1375, 2172)
+
+[node name="Camera2D" type="Camera2D" parent="Character_main"]
+position = Vector2(3, 8)
+zoom = Vector2(1.5, 1.5)
+
+[node name="Enemy_1" parent="." node_paths=PackedStringArray("player") instance=ExtResource("6_sy0r2")]
+position = Vector2(875, 2169)
+player = NodePath("../Character_main")
+
+[node name="TileMap" parent="." instance=ExtResource("33_07jr1")]

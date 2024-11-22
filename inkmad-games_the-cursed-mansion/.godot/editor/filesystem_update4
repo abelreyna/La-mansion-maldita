@@ -1,0 +1,5 @@
+res://Salas/scena_1.tscn
+res://nodes/Enemies/Enemy 1/enemy_1.tscn
+res://nodes/Character/main_character.tscn
+res://nodes/Enemies/Enemy 1/enemy_1.gd
+res://Salas/scena_2.tscn

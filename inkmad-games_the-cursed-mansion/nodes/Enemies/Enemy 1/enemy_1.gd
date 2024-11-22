@@ -17,7 +17,7 @@ func _physics_process(_delta: float) -> void:
 	#var dir = to_local(nav_agent.get_next_path_position().normalized())
 	if player.luz.visible==true:
 		makepaht()
-		speed = 100
+		speed = 300
 	else:
 		speed = 0
 	

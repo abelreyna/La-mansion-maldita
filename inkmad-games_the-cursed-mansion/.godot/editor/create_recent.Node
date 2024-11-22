@@ -1,3 +1,4 @@
+TileMap
 Sprite2D
 CollisionShape2D
 RigidBody2D
@@ -9,7 +10,5 @@ NavigationRegion2D
 NavigationAgent2D
 CharacterBody2D
 Timer
-TileMap
 NavigationLink2D
 ParallaxBackground
-AnimatedSprite2D
