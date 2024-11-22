@@ -452,7 +452,6 @@ script = ExtResource("1_5tico")
 
 [node name="ColNiña" type="CollisionShape2D" parent="."]
 position = Vector2(7.5, 10.625)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_6lr7q")
 
 [node name="AnimNiña" type="AnimatedSprite2D" parent="."]
@@ -465,3 +464,5 @@ animation = &"Idle"
 position = Vector2(10, -10)
 color = Color(0.780392, 0.447059, 0, 1)
 texture = ExtResource("9_f8h0f")
+
+[node name="AudioWalk" type="AudioStreamPlayer" parent="."]
