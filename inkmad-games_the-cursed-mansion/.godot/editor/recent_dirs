@@ -1,7 +1,8 @@
-res://nodes/Enemies/Enemy 1/Enemy 1.2
-res://
-res://nodes/Enemies/Enemy 1
+res://Sensor_1
 res://Salas
+res://
+res://nodes/Enemies/Enemy 1/Enemy 1.2
+res://nodes/Enemies/Enemy 1
 res://nodes/Character
 res://Assets/Niña/Walk
 res://Assets/Niña/Idle
