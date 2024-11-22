@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://ce7u5u0igniun"]
+[gd_scene load_steps=27 format=3 uid="uid://ce7u5u0igniun"]
 
 [ext_resource type="Texture2D" uid="uid://dotixs3xvpc7t" path="res://nodes/Enemies/Enemy 1/AnimationSheet_Character.png" id="1_ahbm4"]
 [ext_resource type="Script" path="res://nodes/Enemies/Enemy 1/enemy_1.gd" id="1_bpv33"]
@@ -176,9 +176,11 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_s68xr"]
+radius = 149.741
+
 [node name="Enemy_1" type="CharacterBody2D"]
 scale = Vector2(2, 2)
-collision_layer = 2
 collision_mask = 3
 motion_mode = 1
 wall_min_slide_angle = 0.0
@@ -189,7 +191,7 @@ position = Vector2(-1, 5)
 scale = Vector2(2, 2)
 shape = SubResource("RectangleShape2D_u1rpm")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimEnemy" type="AnimatedSprite2D" parent="."]
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_v7mmj")
 animation = &"Attack"
@@ -200,4 +202,12 @@ animation = &"Attack"
 wait_time = 0.1
 autostart = true
 
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="Deteccion" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_s68xr")
+one_way_collision_margin = 0.0
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

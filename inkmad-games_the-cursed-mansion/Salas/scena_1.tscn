@@ -2604,15 +2604,14 @@ position = Vector2(5201, 5834)
 scale = Vector2(13.4855, 8.25001)
 texture = ExtResource("5_mcgor")
 
-[node name="Character_main" parent="." instance=ExtResource("1_yjgeo")]
-position = Vector2(1375, 2172)
-
-[node name="Camera2D" type="Camera2D" parent="Character_main"]
-position = Vector2(3, 8)
-zoom = Vector2(1.5, 1.5)
-
 [node name="Enemy_1" parent="." node_paths=PackedStringArray("player") instance=ExtResource("6_sy0r2")]
 position = Vector2(875, 2169)
 player = NodePath("../Character_main")
+
+[node name="Character_main" parent="." instance=ExtResource("1_yjgeo")]
+position = Vector2(1307, 2192)
+
+[node name="Camera2D" type="Camera2D" parent="Character_main"]
+position = Vector2(3, 8)
 
 [node name="TileMap" parent="." instance=ExtResource("33_07jr1")]

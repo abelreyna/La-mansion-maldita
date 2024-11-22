@@ -1,5 +1,5 @@
 extends CharacterBody2D
-const SPEED =150
+const SPEED = 450
 
 @onready var walking_sound = $AudioWalk
 

@@ -1,6 +1,7 @@
+CollisionShape2D
+Area2D
 TileMap
 Sprite2D
-CollisionShape2D
 RigidBody2D
 AudioStreamPlayer
 Camera2D
@@ -11,4 +12,3 @@ NavigationAgent2D
 CharacterBody2D
 Timer
 NavigationLink2D
-ParallaxBackground
