@@ -1,9 +1,2 @@
 res://nodes/Enemies/Enemy 1/enemy_1.tscn
 res://nodes/Enemies/Enemy 1/enemy_1.gd
-res://nodes/Character/main_character.tscn
-res://Salas/scena_1.tscn
-res://Salas/scena_2.tscn
-res://Sensor_1/sensor.tscn
-res://Sensor_1/sensor.gd
-res://nodes/Enemies/Enemy 1/area_2d.gd
-res://nodes/Character/main_character.gd
